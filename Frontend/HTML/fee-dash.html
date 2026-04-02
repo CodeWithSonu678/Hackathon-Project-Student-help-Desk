@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../CSS/fee-dash.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+        <div class="body-dash-student">
+
+                <!-- Nav Bar -->
+                <div class="outer-dash-nav">
+                        <div class="student-info-nav">
+                                <div class="student-nav-img">
+                                        <i class="bi bi-person-circle"></i>
+                                </div>
+                                <div class="student-nav-info">
+                                        <p>Ayush Singh</p>
+                                        <p>CS516632</p>
+                                </div>
+                                <button id="hide-nav"><i class="bi bi-x"></i></button>
+                        </div>
+                        <div class="dash-info-link">
+                                <ul>
+                                        <a href="student-dash-1.html">
+                                                <li ><i class="bi bi-view-list"></i>
+                                                        Dashboard</li>
+                                        </a>
+                                        <a href="student-profile-dash.html">
+                                                <li><i class="bi bi-person"></i> Profile</li>
+                                        </a>
+                                        <a href="attendance-dash.html">
+                                                <li><i class="bi bi-check2-square"></i> Attendance</li>
+                                        </a>
+                                        <a href="fee-dash.html"  style="color: #003580;">
+                                                <li style="background-color: aliceblue;"><i class="bi bi-credit-card"></i> Fee</li>
+                                        </a>
+                                        <a href="student-result-dash.html">
+                                                <li><i class="bi bi-file-earmark-text"></i> Result</li>
+                                        </a>
+                                        <a href="request-dash.html">
+                                                <li><i class="bi bi-chat-left"></i> Complaints</li>
+                                        </a>
+                                        <a href="courses-dash.html">
+                                                <li><i class="bi bi-book"></i> Courses</li>
+                                        </a>
+                                        <a href="hostel-dash.html">
+                                                <li><i class="bi bi-house-door"></i> Hostel</li>
+                                        </a>
+                                        <a href="last-dash.html">
+                                                <li><i class="bi bi-building"></i> College </li>
+                                        </a>
+                                </ul>
+                        </div>
+                        <div class="student-log-out">
+                                <button><i class="bi bi-box-arrow-right"></i> Logout</button>
+                        </div>
+                </div>
+
+                <div class="toggle-dash-nav">
+                        <div class="toggle-img">
+                                <i class="bi bi-person-circle" style="font-size: 35px;"></i>
+                        </div>
+                        <div class="toggle-info-link">
+                                <ul>
+                                        <li style="color: #003580; background-color: aliceblue;"><i
+                                                        class="bi bi-view-list"></i> </li>
+                                        <li><i class="bi bi-person"></i></li>
+                                        <li><i class="bi bi-check2-square"></i></li>
+                                        <li><i class="bi bi-credit-card"></i> </li>
+                                        <li><i class="bi bi-file-earmark-text"></i></li>
+                                        <li><i class="bi bi-chat-left"></i></li>
+                                        <li><i class="bi bi-book"></i></li>
+                                        <li><i class="bi bi-house-door"></i> </li>
+                                        <li><i class="bi bi-building"></i></li>
+                                </ul>
+                        </div>
+                        <div class="toggle-logout">
+                                <i class="bi bi-box-arrow-right"></i>
+                        </div>
+                </div>
+
+
+                <!-- Student Info -->
+
+                <div class="outer-dash">
+                        <div class="fee-outer-body">
+                                <div class="fee-heading">
+                                        <div class="fee-head">
+                                                <p style="margin: 0px; font-size: 30px; font-weight: bold;">Fees
+                                                        Management</p>
+                                                <p>View your fee structure and payment history</p>
+                                        </div>
+
+                                </div>
+                                <div class="fee-card">
+                                        <div class="f-card">
+                                                <div class="card-fee-body" style="background-color: black;">
+                                                        <p class="f-card-head" style="color: white;">Total Fees</p>
+                                                        <p class="f-card-num" style="color: white;">₹1,25,000</p>
+                                                </div>
+                                                <div class="card-fee-body" style="color: rgb(11, 179, 11);">
+                                                        <p class="f-card-head" style="color: black;">Paid Amount</p>
+                                                        <p class="f-card-num">₹75,000</p>
+                                                </div>
+                                        </div>
+                                        <div class="card-fee-body" style="color: rgb(255, 35, 35);">
+                                                <p class="f-card-head" style="color: black;">Due Amount</p>
+                                                <p class="f-card-num">₹50,000</p>
+                                        </div>
+                                </div>
+
+                        </div>
+
+                        <div class="fee-table-outer">
+                                <div class="fee-table-head">
+                                        <div class="fee-table-heading">
+                                                <p style="margin: 0px; font-size: 20px; font-weight: bold;">Fee
+                                                        Structure</p>
+                                                <p>Breakdown of your total fees for this semester</p>
+                                        </div>
+                                        <div class="fee-pending">
+                                                <p><i class="bi bi-exclamation-circle"></i>
+                                                        ₹50,000</p>
+                                        </div>
+                                </div>
+                                <div class="fee-table">
+                                        <table>
+                                                <tr style="background-color: aliceblue;">
+                                                        <th>Category</th>
+                                                        <th>Description</th>
+                                                        <th>Amount</th>
+                                                        <th>Status</th>
+                                                </tr>
+                                                <tr>
+                                                        <th>Tuition Fee</th>
+                                                        <td>Semester 6 Tuition Fee</td>
+                                                        <th>₹60,000</th>
+                                                        <td class="f-status=p">Paid</td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Exam Fee</th>
+                                                        <td>End Semester Examination Fee</td>
+                                                        <th>₹5,000</th>
+                                                        <td class="f-status-p">Paid</td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Library Fee</th>
+                                                        <td>Annual Library Access Fee</td>
+                                                        <th>₹2,000</th>
+                                                        <td class="f-status-p">Paid</td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Laboratory Fee</th>
+                                                        <td>Computer Lab & Workshop Fee</td>
+                                                        <th>₹8,000</th>
+                                                        <td class="f-status-p">Paid</td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Development Fee</th>
+                                                        <td>College Development & Infrastructure Fee</td>
+                                                        <th>₹25,000</th>
+                                                        <td class="f-status-pen">Pending</td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Sports Fee</th>
+                                                        <td>Annual Sports & Cultural Activity</td>
+                                                        <th>₹3,000</th>
+                                                        <td class="f-status-pen">Pending</td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Alumni Fee</th>
+                                                        <td>Alumni Association Membership</td>
+                                                        <th>₹500</th>
+                                                        <td class="f-status-pen">Pending</td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Miscellaneous</th>
+                                                        <td>Stationery, ID Card etc</td>
+                                                        <th>₹21,500</th>
+                                                        <td class="f-status-pen">Pending</td>
+                                                </tr>
+                                                <tr style="background-color: rgba(220, 220, 220, 0.3);">
+                                                        <th colspan="2" style="text-align: end; padding: 10px 50px;">Total Fee</th>
+                                                        <th colspan="2"> ₹1,25,000</th>
+                                                </tr>
+                                                <tr style="background-color: rgba(11, 179, 11,0.4);">
+                                                        <th colspan="2" style="text-align: end; padding: 10px 50px;">Paid</th>
+                                                        <th colspan="2"> ₹75,000</th>
+                                                </tr>
+                                                <tr style="background-color: rgba(255, 35, 35,0.3);">
+                                                        <th colspan="2" style="text-align: end; padding: 10px 50px;">Due Amount</th>
+                                                        <th colspan="2"> ₹50,000</th>
+                                                </tr>
+                                        </table>
+                                </div>
+
+                                
+                                <div class="fee-table-heading">
+                                        <p style="margin: 0px; font-size: 20px; font-weight: bold;">Payment History</p>
+                                        <p>Your past transactions and receipts</p>
+                                </div>
+                                <div class="fee-table">
+                                        <table>
+                                                <tr style="background-color: aliceblue;">
+                                                        <th>Date</th>
+                                                        <th>Transaction ID</th>
+                                                        <th>Method</th>
+                                                        <th>Amount</th>
+                                                        <th>Receipt</th>
+                                                </tr>
+                                                <tr>
+                                                        <td>Jan 10,2026</td>
+                                                        <td>TXN2026010001</td>
+                                                        <td>Online Banking</td>
+                                                        <th style="color: rgb(11, 179, 11);">₹50,000</th>
+                                                        <td style="color: #003580;"><i class="bi bi-file-earmark-arrow-down"></i></td>
+                                                </tr>
+                                                <tr>
+                                                        <td>Feb 05,2026</td>
+                                                        <td>TXN2026020015</td>
+                                                        <td>UPI</td>
+                                                        <th style="color: rgb(11, 179, 11);">₹15,000</th>
+                                                        <td style="color: #003580;"><i class="bi bi-file-earmark-arrow-down"></i></td>
+                                                </tr>
+                                                <tr>
+                                                        <td>Mar 01,2026</td>
+                                                        <td>TXN2026030020</td>
+                                                        <td>Debit Card</td>
+                                                        <th style="color: rgb(11, 179, 11);">₹10,000</th>
+                                                        <td style="color: #003580;"><i class="bi bi-file-earmark-arrow-down"></i></td>
+                                                </tr>
+                                        </table>
+                                </div>
+                        </div>
+
+                </div>
+
+        </div>
+
+</body>
+<script src="../JS/fee-dash.js"></script>
+
+</html>

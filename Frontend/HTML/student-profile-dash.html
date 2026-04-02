@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../CSS/student-profile-dash.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+        <div class="body-dash-student">
+
+                <!-- Nav Bar -->
+                <div class="outer-dash-nav">
+                        <div class="student-info-nav">
+                                <div class="student-nav-img">
+                                        <i class="bi bi-person-circle"></i>
+                                </div>
+                                <div class="student-nav-info">
+                                        <p>Ayush Singh</p>
+                                        <p>CS516632</p>
+                                </div>
+                                <button id="hide-nav"><i class="bi bi-x"></i></button>
+                        </div>
+                        <div class="dash-info-link">
+                                <ul>
+                                        <a href="student-dash-1.html">
+                                                <li><i class="bi bi-view-list"></i>
+                                                        Dashboard</li>
+                                        </a>
+                                        <a href="student-profile-dash.html" style="color: #003580;">
+                                                <li style="background-color: aliceblue;"><i class="bi bi-person"></i>
+                                                        Profile</li>
+                                        </a>
+                                        <a href="attendance-dash.html">
+                                                <li><i class="bi bi-check2-square"></i> Attendance</li>
+                                        </a>
+                                        <a href="fee-dash.html">
+                                                <li><i class="bi bi-credit-card"></i> Fee</li>
+                                        </a>
+                                        <a href="student-result-dash.html">
+                                                <li><i class="bi bi-file-earmark-text"></i> Result</li>
+                                        </a>
+                                        <a href="request-dash.html">
+                                                <li><i class="bi bi-chat-left"></i> Complaints</li>
+                                        </a>
+                                        <a href="courses-dash.html">
+                                                <li><i class="bi bi-book"></i> Courses</li>
+                                        </a>
+                                        <a href="hostel-dash.html">
+                                                <li><i class="bi bi-house-door"></i> Hostel</li>
+                                        </a>
+                                        <a href="last-dash.html">
+                                                <li><i class="bi bi-building"></i> College </li>
+                                        </a>
+                                </ul>
+                        </div>
+                        <div class="student-log-out">
+                                <button><i class="bi bi-box-arrow-right"></i> Logout</button>
+                        </div>
+                </div>
+
+                <div class="toggle-dash-nav">
+                        <div class="toggle-img">
+                                <i class="bi bi-person-circle" style="font-size: 35px;"></i>
+                        </div>
+                        <div class="toggle-info-link">
+                                <ul>
+                                        <li><i class="bi bi-view-list"></i> </li>
+                                        <li style="color: #003580; background-color: aliceblue;"><i
+                                                        class="bi bi-person"></i></li>
+                                        <li><i class="bi bi-check2-square"></i></li>
+                                        <li><i class="bi bi-credit-card"></i> </li>
+                                        <li><i class="bi bi-file-earmark-text"></i></li>
+                                        <li><i class="bi bi-chat-left"></i></li>
+                                        <li><i class="bi bi-book"></i></li>
+                                        <li><i class="bi bi-house-door"></i> </li>
+                                        <li><i class="bi bi-building"></i></li>
+                                </ul>
+                        </div>
+                        <div class="toggle-logout">
+                                <i class="bi bi-box-arrow-right"></i>
+                        </div>
+                </div>
+
+
+                <!-- Student Info -->
+
+                <div class="outer-dash">
+                        <div class="p-outer">
+                                <div class="std-profile-outer">
+                                        <div class="std-profile-head">
+                                                <p class="std-txt1">Student Profile</p>
+                                                <p class="std-txt2">Manage your personal and academic information</p>
+                                        </div>
+                                        <div class="std-edit-btn">
+                                                <button id="edit-btn"><i class="bi bi-pencil-square"></i>
+                                                                Edit</button>
+                                        </div>
+                                </div>
+                                <div class="profile-nav-outer">
+                                        <ul>
+                                                <div class="p-nav-1">
+                                                        <li style="background-color: white; " id="std-profile"><i
+                                                                        class="bi bi-person"></i>
+                                                                Personal</li>
+                                                        <li id="std-family"><i class="bi bi-telephone"></i> Family</li>
+                                                </div>
+                                                <div class="p-nav-2">
+                                                        <li id="std-academics"><i class="bi bi-mortarboard"></i>
+                                                                Academics</li>
+                                                </div>
+                                        </ul>
+                                </div>
+
+                                <!-- Personal Info -->
+
+                                <div class="info-outer">
+                                        <p class="info-head"><i class="bi bi-person"></i> General Details</p>
+                                        <hr>
+                                        <div class="info-std">
+                                                <div class="in-std">
+                                                        <div class="std">
+                                                                <p class="std-lable">Full Name</p>
+                                                                <p class="info">Ayush Singh</p>
+                                                        </div>
+                                                        <div class="std">
+                                                                <p class="std-lable">Gender</p>
+                                                                <p class="info">Male</p>
+                                                        </div>
+                                                        <div class="std">
+                                                                <p class="std-lable">Phone Number</p>
+                                                                <p class="info">9826725625</p>
+                                                        </div>
+                                                </div>
+                                                <div class="in-std">
+                                                        <div class="std">
+                                                                <p class="std-lable">Date of Birth</p>
+                                                                <p class="info">15-05-2002</p>
+                                                        </div>
+                                                        <div class="std">
+                                                                <p class="std-lable">Email</p>
+                                                                <p class="info">ayushsingh143@gmail.com</p>
+                                                        </div>
+                                                        <div class="std">
+                                                                <p class="std-lable">Aadhar Number</p>
+                                                                <p class="info">XXXX-XXXX-4432</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+
+                                        <p class="info-head"><i class="bi bi-geo-alt"></i> Address Details</p>
+                                        <hr>
+                                        <div class="info-std">
+                                                <div class="in-std">
+                                                        <div class="std">
+                                                                <p class="std-lable">Street Address</p>
+                                                                <p class="info">123, Shivaji Nagar, Near Bus Stand</p>
+                                                        </div>
+                                                        <div class="std">
+                                                                <p class="std-lable">State</p>
+                                                                <p class="info">Maharashtra</p>
+                                                        </div>
+                                                </div>
+                                                <div class="in-std">
+                                                        <div class="std">
+                                                                <p class="std-lable">City</p>
+                                                                <p class="info">Pune</p>
+                                                        </div>
+                                                        <div class="std">
+                                                                <p class="std-lable">PIN code</p>
+                                                                <p class="info">411005</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+
+
+                        <!--  ada -->
+
+                        <div class="f-outer">
+                                <div class="std-profile-outer">
+                                        <div class="std-profile-head">
+                                                <p class="std-txt1">Student Profile</p>
+                                                <p class="std-txt2">Manage your personal and academic information</p>
+                                        </div>
+                                        <div class="std-edit-btn">
+                                                <a href=""><button id="edit-btn"><i class="bi bi-pencil-square"></i>
+                                                                Edit</button></a>
+                                        </div>
+                                </div>
+                                <div class="profile-nav-outer">
+                                        <ul>
+                                                <div class="p-nav-1">
+                                                        <li id="std-profile"><i class="bi bi-person"></i>
+                                                                Personal</li>
+                                                        <li style="background-color: white; " id="std-family"><i
+                                                                        class="bi bi-telephone"></i> Family</li>
+                                                </div>
+                                                <div class="p-nav-2">
+                                                        <li id="std-academics"><i class="bi bi-mortarboard"></i>
+                                                                Academics</li>
+                                                </div>
+                                        </ul>
+                                </div>
+
+
+                                <!-- Family Info -->
+
+                                <div class="f-head">
+                                        <div class="family-head">
+                                                <p>Father's Details</p>
+                                        </div>
+                                        <div class="family-head">
+                                                <p>Mother's Details</p>
+                                        </div>
+                                </div>
+                                <hr>
+                                <div class="family-info-outer">
+                                        <div class="family-details">
+
+                                                <div class="fam-i">
+                                                        <div class="fam-lable">
+                                                                <p>Name</p>
+                                                        </div>
+                                                        <div class="fam-info">
+                                                                <p>Ramesh Singh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="fam-i">
+                                                        <div class="fam-lable">
+                                                                <p>Phone</p>
+                                                        </div>
+                                                        <div class="fam-info">
+                                                                <p>9926637712</p>
+                                                        </div>
+                                                </div>
+                                                <div class="fam-i">
+                                                        <div class="fam-lable">
+                                                                <p>Family Occupation</p>
+                                                        </div>
+                                                        <div class="fam-info">
+                                                                <p>Business</p>
+                                                        </div>
+                                                </div>
+
+                                        </div>
+                                        <div class="family-details">
+
+
+                                                <div class="fam-i">
+                                                        <div class="fam-lable">
+                                                                <p>Name</p>
+                                                        </div>
+                                                        <div class="fam-info">
+                                                                <p>Sunita Devi</p>
+                                                        </div>
+                                                </div>
+                                                <div class="fam-i">
+                                                        <div class="fam-lable">
+                                                                <p>Phone</p>
+                                                        </div>
+                                                        <div class="fam-info">
+                                                                <p>98364252145</p>
+                                                        </div>
+                                                </div>
+                                                <div class="fam-i">
+                                                        <div class="fam-lable">
+                                                                <p>Family Occupation</p>
+                                                        </div>
+                                                        <div class="fam-info">
+                                                                <p>Homemaker</p>
+                                                        </div>
+                                                </div>
+
+                                        </div>
+                                </div>
+                        </div>
+
+
+                        <!--  -->
+
+                        <div class="a-outer">
+                                <div class="std-profile-outer">
+                                        <div class="std-profile-head">
+                                                <p class="std-txt1">Student Profile</p>
+                                                <p class="std-txt2">Manage your personal and academic information</p>
+                                        </div>
+                                        <div class="std-edit-btn">
+                                                <a href=""><button id="edit-btn"><i class="bi bi-pencil-square"></i>
+                                                                Edit</button></a>
+                                        </div>
+                                </div>
+                                <div class="profile-nav-outer">
+                                        <ul>
+                                                <div class="p-nav-1">
+                                                        <li id="std-profile"><i class="bi bi-person"></i>
+                                                                Personal</li>
+                                                        <li id="std-family"><i class="bi bi-telephone"></i> Family</li>
+                                                </div>
+                                                <div class="p-nav-2">
+                                                        <li style="background-color: white; " id="std-academics"><i
+                                                                        class="bi bi-mortarboard"></i>
+                                                                Academics</li>
+                                                </div>
+                                        </ul>
+                                </div>
+
+
+                                <!-- Academic Info -->
+                                <p class="a-head">Academic Details</p>
+                                <hr>
+                                <div class="academic-info-outer">
+                                        <div class="academic-details">
+                                                <div class="detail-body">
+                                                        <div class="a-lable">
+                                                                Enrollment Number
+                                                        </div>
+                                                        <div class="a-info">
+                                                                EN2021CS001
+                                                        </div>
+                                                </div>
+                                                <div class="detail-body">
+                                                        <div class="a-lable">
+                                                                Roll No
+                                                        </div>
+                                                        <div class="a-info">
+                                                                CS516632
+                                                        </div>
+                                                </div>
+                                                <div class="detail-body">
+                                                        <div class="a-lable">
+                                                                Program
+                                                        </div>
+                                                        <div class="a-info">
+                                                                B.Tech
+                                                        </div>
+                                                </div>
+                                                <div class="detail-body">
+                                                        <div class="a-lable">
+                                                                Year
+                                                        </div>
+                                                        <div class="a-info">
+                                                                3rd Year
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="academic-details">
+                                                <div class="detail-body">
+                                                        <div class="a-lable">
+                                                                Enrollment Date
+                                                        </div>
+                                                        <div class="a-info">
+                                                                01-08-2021
+                                                        </div>
+                                                </div>
+                                                <div class="detail-body">
+                                                        <div class="a-lable">
+                                                                Department
+                                                        </div>
+                                                        <div class="a-info">
+                                                                Computer Science & Engineering
+                                                        </div>
+                                                </div>
+                                                <div class="detail-body">
+                                                        <div class="a-lable">
+                                                                Current Semester
+                                                        </div>
+                                                        <div class="a-info">
+                                                                6th Semester
+                                                        </div>
+                                                </div>
+                                                <div class="detail-body">
+                                                        <div class="a-lable">
+                                                                Section & Batch
+                                                        </div>
+                                                        <div class="a-info">
+                                                                A-2021-2025
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </div>
+
+
+                        <!-- Edit Button -->
+
+
+                        <div class="edit-outer" id="e-outer">
+                                <div class="edit-head-txt">
+                                        <div class="e-head">
+                                                <p class="edit-head">Edit Profile Details</p>
+                                                <p class="edit-txt">Update your contact and address information</p>
+                                        </div>
+                                        <div class="e-cancel">
+                                                <button id="edit-cancel"><i class="bi bi-x" style="font-size: 25px;"></i></button>
+                                        </div>
+                                </div>
+                                <div class="f-row">
+                                        <div class="form-row">
+                                                <div class="input-row">
+                                                        <label for="">Email</label>
+                                                        <input type="email">
+                                                </div>
+                                                <div class="input-row">
+                                                        <label for="">City</label>
+                                                        <input type="text">
+                                                </div>
+                                                <div class="input-row">
+                                                        <label for="">Address</label>
+                                                        <input type="text">
+                                                </div>
+                                                <div class="input-row">
+                                                        <label for="">Father's Name</label>
+                                                        <input type="text">
+                                                </div>
+                                                <div class="input-row">
+                                                        <label for="">Mother's Name</label>
+                                                        <input type="text">
+                                                </div>
+                                        </div>
+                                        <div class="form-row">
+                                                <div class="input-row">
+                                                        <label for="">Phone Number</label>
+                                                        <input type="tel">
+                                                </div>
+                                                <div class="input-row">
+                                                        <label for="">State</label>
+                                                        <input type="text">
+                                                </div>
+                                                <div class="input-row">
+                                                        <label for="">PIN code</label>
+                                                        <input type="tel">
+                                                </div>
+                                                <div class="input-row">
+                                                        <label for="">Father's Number</label>
+                                                        <input type="tel">
+                                                </div>
+                                                <div class="input-row">
+                                                        <label for="">Mother's Number</label>
+                                                        <input type="tel">
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="save-edit-btn">
+                                        <button>Cancel</button>
+                                        <button style="background-color: #003580; color: white;">Save Changes</button>
+                                </div>
+                        </div>
+
+
+
+
+                </div>
+
+</body>
+<script src="../JS/student-profile-dash.js"></script>
+
+</html>

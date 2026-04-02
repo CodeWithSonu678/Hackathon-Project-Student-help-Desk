@@ -1,0 +1,526 @@
+body {
+        background-color: aliceblue;
+}
+
+
+.outer-dash {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 80px;
+        background-color: aliceblue;
+}
+
+
+/* Nav Bar */
+.outer-dash-nav {
+        display: none;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+}
+
+.student-info-nav {
+        padding: 10px 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom: 1px solid gray;
+}
+
+.student-nav-info p {
+        margin: 10px;
+}
+
+.student-nav-img {
+        font-size: 50px;
+}
+
+#hide-nav {
+        background: none;
+        border: none;
+}
+
+.dash-info-link a {
+        text-decoration: none;
+        color: black;
+}
+
+.dash-info-link {
+        width: 100%;
+        border-bottom: 1px solid gray;
+}
+
+.dash-info-link li {
+        font-size: 17px;
+        list-style: none;
+        padding: 15px;
+        margin: 2px;
+}
+
+.dash-info-link ul {
+        padding: 0px;
+}
+
+.dash-info-link li:hover {
+        transition: 0.2s ease-in-out;
+        background-color: aliceblue;
+        border-bottom: 1px solid #003580;
+}
+
+.student-log-out button {
+        background: none;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        margin: 0px 5px 20px 5px;
+}
+
+
+.toggle-dash-nav {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+}
+
+.toggle-info-link ul {
+        list-style: none;
+        padding: 0px;
+}
+
+.toggle-info-link li {
+        font-size: 18px;
+        padding: 8px;
+        margin: 8px;
+}
+
+.toggle-logout {
+        font-size: 15px;
+        margin: 20px;
+}
+
+@media (max-width: 768px) {
+
+        .dash-info-link li {
+                font-size: 15px;
+                padding: 6px;
+                margin: 5px;
+        }
+
+        .toggle-info-link li {
+                font-size: 15px;
+                margin: 5px;
+        }
+
+        .toggle-logout {
+                font-size: 15px;
+                margin: 0px;
+        }
+}
+
+/* Profile Info */
+
+.std-profile-outer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 20px 0px;
+        background-color: white;
+        padding: 20px;
+}
+
+.std-txt1 {
+        font-size: 25px;
+        font-weight: bold;
+}
+
+.std-edit-btn button {
+        background-color: #003580;
+        border: none;
+        color: white;
+        border-radius: 8px;
+        padding: 5px 15px;
+        font-size: 14px;
+        cursor: pointer;
+        margin: 0px 5px 20px 5px;
+}
+
+.p-outer {
+        background-color: white;
+        padding: 20px;
+}
+
+.p-nav-1 {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+}
+
+.profile-nav-outer ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 95%;
+        list-style: none;
+        margin-right: 50px;
+}
+
+.profile-nav-outer li {
+        font-size: 18px;
+        padding: 10px 80px;
+        margin: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: aliceblue;
+}
+
+
+/* Student Info */
+
+.info-outer {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+}
+
+.info-head {
+        font-size: 25px;
+        margin: 20px 0px;
+        font-weight: bold;
+}
+
+.info-std {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        width: 100%;
+}
+
+.std-lable {
+        font-size: 12px;
+        margin: 0px;
+        color: gray;
+}
+
+.info {
+        font-size: 15px;
+        font-weight: bold;
+}
+
+@media (max-width: 900px) {
+        .outer-dash {
+                padding-left: 20px;
+        }
+
+        .profile-nav-outer ul {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+        }
+}
+
+@media (max-width: 768px) {
+        .p-nav-1 {
+                flex-direction: column;
+                align-items: start;
+                width: 100%;
+        }
+
+        .p-nav-2 {
+                align-items: center;
+                width: 100%;
+        }
+
+        .p-outer {
+                padding: 0px 35px;
+        }
+
+        .std-profile-outer {
+                flex-direction: column;
+                align-items: start;
+        }
+
+        .std-edit-btn {
+                margin-top: 10px;
+        }
+
+        .profile-nav-outer ul {
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+                width: 100%;
+                margin-right: 0px;
+        }
+
+        .profile-nav-outer li {
+                padding: 10px 20px;
+                width: 80%;
+                text-align: start;
+        }
+
+        .info-std {
+                flex-direction: column;
+                align-items: start;
+        }
+
+        .std {
+                text-align: start;
+        }
+}
+
+
+/* Family Info */
+.f-outer {
+        background-color: white;
+        padding: 20px;
+        display: none;
+}
+
+.family-info-outer {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        width: 100%;
+        margin: 20px 0px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+}
+
+.f-head {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 20px 0px 0px 0px;
+}
+
+.fam-info p {
+        font-size: 15px;
+        font-weight: bold;
+}
+
+.fam-lable p {
+        font-size: 12px;
+        margin: 0px;
+        color: gray;
+}
+
+.fam-i {
+        padding: 10px 0px;
+}
+
+
+@media (max-width: 900px) {
+        .family-info-outer {
+                padding-left: 20px;
+        }
+
+        .profile-nav-outer ul {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+        }
+}
+
+@media (max-width: 768px) {
+        .family-info-outer {
+                flex-direction: column;
+                align-items: start;
+        }
+
+        .family-details {
+                width: 100%;
+                padding-left: 20px;
+        }
+
+        .fam-i {
+                padding: 10px 0px;
+        }
+
+        .f-outer {
+                padding: 0px 35px;
+        }
+}
+
+/* Academic Info */
+.a-outer {
+        background-color: white;
+        padding: 20px;
+        display: none;
+}
+
+.academic-info-outer {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        width: 100%;
+        margin: 20px 0px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+}
+
+.a-head {
+        font-size: 25px;
+        margin: 20px 0px;
+        font-weight: bold;
+}
+
+.a-info {
+        font-size: 15px;
+        font-weight: bold;
+}
+
+.a-lable {
+        font-size: 12px;
+        margin: 0px;
+        color: gray;
+}
+
+.detail-body {
+        padding: 10px 0px;
+}
+
+@media (max-width: 900px) {
+        .academic-info-outer {
+                padding-left: 20px;
+        }
+
+        .profile-nav-outer ul {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+        }
+}
+
+@media (max-width: 768px) {
+        .academic-info-outer {
+                flex-direction: column;
+                align-items: start;
+        }
+
+        .academic-details {
+                width: 100%;
+                padding-left: 20px;
+        }
+
+        .a-outer {
+                padding: 0px 35px;
+        }
+
+        .a-head {
+                text-align: start;
+                padding-left: 20px;
+        }
+}
+
+
+/* Edit Button */
+
+.edit-outer {
+        background-color: white;
+        padding: 30px;
+        width: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 8px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        display: none;
+}
+
+.edit-head {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0px;
+}
+
+.edit-txt {
+        font-size: 15px;
+}
+
+.f-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 10px 0px;
+}
+
+.input-row {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 10px 0px;
+}
+
+.input-row label {
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0px;
+        color: black;
+}
+
+.input-row input {
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid gray;
+        width: 100%;
+        height: 35px;
+}
+
+.input-row input:focus {
+        outline: none;
+        border-color: #003580;
+        box-shadow: 0 0 5px rgba(0, 53, 128, 0.5);
+}
+
+.save-edit-btn {
+        display: flex;
+        align-items: end;
+        justify-content: flex-end;
+}
+
+.save-edit-btn button {
+        border: none;
+        border-radius: 8px;
+        padding: 8px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        margin: 0px 5px;
+}
+
+.edit-head-txt{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.e-cancel button{
+        background: none;
+        border: none;
+}

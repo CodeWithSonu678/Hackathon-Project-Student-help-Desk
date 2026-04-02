@@ -1,0 +1,268 @@
+body {
+  background-color: aliceblue;
+}
+
+.outer-dash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 80px;
+  background-color: white;
+}
+
+
+/* Nav Bar */
+.outer-dash-nav {
+  display: none;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+
+.student-info-nav {
+  padding: 10px 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid gray;
+}
+
+.student-nav-info p {
+  margin: 10px;
+}
+
+.student-nav-img {
+  font-size: 50px;
+}
+
+#hide-nav {
+  background: none;
+  border: none;
+}
+
+.dash-info-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.dash-info-link {
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.dash-info-link li {
+  font-size: 17px;
+  list-style: none;
+  padding: 15px;
+  margin: 2px;
+}
+
+.dash-info-link ul {
+  padding: 0px;
+}
+
+.dash-info-link li:hover {
+  transition: 0.2s ease-in-out;
+  background-color: aliceblue;
+  border-bottom: 1px solid #003580;
+}
+
+.student-log-out button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0px 5px 20px 5px;
+}
+
+
+.toggle-dash-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.toggle-info-link ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.toggle-info-link li {
+  font-size: 18px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.toggle-logout {
+  font-size: 15px;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .dash-info-link li {
+    font-size: 15px;
+    padding: 6px;
+    margin: 5px;
+  }
+
+  .toggle-info-link li {
+    font-size: 15px;
+    margin: 5px;
+  }
+
+  .toggle-logout {
+    font-size: 15px;
+    margin: 0px;
+  }
+}
+
+.container {
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.header p {
+  color: gray;
+  font-size: 14px;
+}
+
+.semester-btn {
+  background: #e6f0ff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #2a6df4;
+  cursor: pointer;
+}
+
+.tabs {
+  margin: 20px 0;
+}
+
+.tabs button {
+  border: none;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background: #eee;
+  cursor: pointer;
+}
+
+.tabs .active {
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  border-top: 4px solid #2a6df4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.code {
+  background: #eef3ff;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.tag {
+  background: #eef3ff;
+  color: #2a6df4;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.tag.green {
+  background: #e6fff2;
+  color: green;
+}
+
+.card h4 {
+  margin: 10px 0;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 13px;
+  color: gray;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 30px 0;
+}
+
+@media (max-width:768px){
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+
+@media (max-width:500px){
+  .grid{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .header{
+    align-items: start;
+    flex-direction: column;
+  }
+}

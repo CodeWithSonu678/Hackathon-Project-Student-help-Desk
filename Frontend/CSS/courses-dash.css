@@ -1,0 +1,267 @@
+body {
+  background-color: aliceblue;
+}
+
+.outer-dash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 80px;
+  background-color: white;
+}
+
+
+/* Nav Bar */
+.outer-dash-nav {
+  display: none;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+
+.student-info-nav {
+  padding: 10px 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid gray;
+}
+
+.student-nav-info p {
+  margin: 10px;
+}
+
+.student-nav-img {
+  font-size: 50px;
+}
+
+#hide-nav {
+  background: none;
+  border: none;
+}
+
+.dash-info-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.dash-info-link {
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.dash-info-link li {
+  font-size: 17px;
+  list-style: none;
+  padding: 15px;
+  margin: 2px;
+}
+
+.dash-info-link ul {
+  padding: 0px;
+}
+
+.dash-info-link li:hover {
+  transition: 0.2s ease-in-out;
+  background-color: aliceblue;
+  border-bottom: 1px solid #003580;
+}
+
+.student-log-out button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0px 5px 20px 5px;
+}
+
+
+.toggle-dash-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.toggle-info-link ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.toggle-info-link li {
+  font-size: 18px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.toggle-logout {
+  font-size: 15px;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .dash-info-link li {
+    font-size: 15px;
+    padding: 6px;
+    margin: 5px;
+  }
+
+  .toggle-info-link li {
+    font-size: 15px;
+    margin: 5px;
+  }
+
+  .toggle-logout {
+    font-size: 15px;
+    margin: 0px;
+  }
+}
+
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.subtext {
+    color: gray;
+    margin-top: 5px;
+}
+
+/* TABS */
+.tabs {
+    margin-top: 10px;
+}
+
+.tabs button {
+    padding: 8px 14px;
+    border: none;
+    background: #eaeef6;
+    border-radius: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.tabs button.active {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* SEMESTER BUTTON */
+.semester-btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #cfd6e4;
+    background: white;
+    cursor: pointer;
+}
+
+/* GRID */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-top: 4px solid #3b82f6;
+    position: relative;
+}
+
+/* TAG */
+.tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e6efff;
+    color: #3b82f6;
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+.tag.green {
+    background: #e7f9ef;
+    color: #16a34a;
+}
+
+.sem-head{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+/* COURSE CODE */
+.code {
+    font-size: 12px;
+    background: #eef2ff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 50px;
+}
+
+/* TITLE */
+.title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* DETAILS */
+.details {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.details div {
+    margin-bottom: 5px;
+}
+
+/* FOOTER */
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

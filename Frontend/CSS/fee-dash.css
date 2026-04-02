@@ -1,0 +1,242 @@
+body {
+        background-color: aliceblue;
+}
+
+.outer-dash {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 80px;
+        background-color: white;
+}
+
+
+/* Nav Bar */
+.outer-dash-nav {
+        display: none;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+}
+
+.student-info-nav {
+        padding: 10px 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom: 1px solid gray;
+}
+
+.student-nav-info p {
+        margin: 10px;
+}
+
+.student-nav-img {
+        font-size: 50px;
+}
+
+#hide-nav {
+        background: none;
+        border: none;
+}
+
+.dash-info-link a {
+        text-decoration: none;
+        color: black;
+}
+
+.dash-info-link {
+        width: 100%;
+        border-bottom: 1px solid gray;
+}
+
+.dash-info-link li {
+        font-size: 17px;
+        list-style: none;
+        padding: 15px;
+        margin: 2px;
+}
+
+.dash-info-link ul {
+        padding: 0px;
+}
+
+.dash-info-link li:hover {
+        transition: 0.2s ease-in-out;
+        background-color: aliceblue;
+        border-bottom: 1px solid #003580;
+}
+
+.student-log-out button {
+        background: none;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        margin: 0px 5px 20px 5px;
+}
+
+
+.toggle-dash-nav {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.toggle-info-link ul {
+        list-style: none;
+        padding: 0px;
+}
+
+.toggle-info-link li {
+        font-size: 18px;
+        padding: 8px;
+        margin: 8px;
+}
+
+.toggle-logout {
+        font-size: 15px;
+        margin: 20px;
+}
+
+@media (max-width: 768px) {
+
+        .dash-info-link li {
+                font-size: 15px;
+                padding: 6px;
+                margin: 5px;
+        }
+
+        .toggle-info-link li {
+                font-size: 15px;
+                margin: 5px;
+        }
+
+        .toggle-logout {
+                font-size: 15px;
+                margin: 0px;
+        }
+}
+
+/* Fee */
+
+.fee-outer-body {
+        padding: 40px;
+}
+
+.fee-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.card-fee-body {
+        border: 1px solid black;
+        margin: 10px 20px;
+        padding: 5px 20px;
+        width: 300px;
+        text-align: start;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.f-card-head {
+        font-size: 14px;
+        margin: 0px;
+        font-weight: 500;
+}
+
+.f-card-num {
+        font-size: 25px;
+        font-weight: bold;
+}
+
+.f-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+@media (max-width:1024px) {
+        .fee-card {
+                flex-direction: column;
+        }
+}
+
+@media (max-width:550px) {
+        .card-fee-body{
+                width: 230px;
+        }
+
+        .f-card {
+                flex-direction: column;
+        }
+}
+
+/* Fee table */
+
+.fee-table-outer{
+        width: 95%;
+}
+
+.fee-table-head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.fee-pending p{
+        color: rgb(255, 35, 35);
+        border: 1px solid rgb(255, 35, 35);
+        background-color: rgba(255, 35, 35, 0.2);
+        margin: 0px;
+        padding: 5px;
+        border-radius: 20px;
+}
+
+.fee-table{
+        width: 100%;
+        overflow-x: scroll;
+}
+
+.fee-table table{
+        width: 100%;
+        border-collapse: separate;
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 12px;
+        border: 0px;
+        margin-bottom: 50px;
+}
+
+.fee-table th{
+        padding: 10px 20px;
+}
+
+.fee-table td{
+        padding: 10px 20px;
+}
+
+@media (max-width:550px) {
+        .fee-table-head{
+                align-items: start;
+                justify-content: start;
+                flex-direction: column;
+        }
+}

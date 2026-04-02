@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="../CSS/student-result-dash.css">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+</head>
+
+<body>
+
+  <div class="body-dash-student">
+
+    <!-- Nav Bar -->
+    <div class="outer-dash-nav">
+      <div class="student-info-nav">
+        <div class="student-nav-img">
+          <i class="bi bi-person-circle"></i>
+        </div>
+        <div class="student-nav-info">
+          <p>Ayush Singh</p>
+          <p>CS516632</p>
+        </div>
+        <button id="hide-nav"><i class="bi bi-x"></i></button>
+      </div>
+      <div class="dash-info-link">
+        <ul>
+          <a href="student-dash-1.html" >
+            <li ><i class="bi bi-view-list"></i>
+              Dashboard</li>
+          </a>
+          <a href="../HTML/student-profile-dash.html">
+            <li><i class="bi bi-person"></i> Profile</li>
+          </a>
+          <a href="attendance-dash.html">
+            <li><i class="bi bi-check2-square"></i> Attendance</li>
+          </a>
+          <a href="fee-dash.html">
+            <li><i class="bi bi-credit-card"></i> Fee</li>
+          </a>
+          <a href="student-result-dash.html" style="color: #003580;">
+            <li style="background-color: aliceblue;"><i class="bi bi-file-earmark-text"></i> Result</li>
+          </a>
+          <a href="request-dash.html">
+            <li><i class="bi bi-chat-left"></i> Complaints</li>
+          </a>
+          <a href="courses-dash.html">
+            <li><i class="bi bi-book"></i> Courses</li>
+          </a>
+          <a href="hostel-dash.html">
+            <li><i class="bi bi-house-door"></i> Hostel</li>
+          </a>
+          <a href="last-dash.html">
+            <li><i class="bi bi-building"></i> College </li>
+          </a>
+        </ul>
+      </div>
+      <div class="student-log-out">
+        <button><i class="bi bi-box-arrow-right"></i> Logout</button>
+      </div>
+    </div>
+
+    <div class="toggle-dash-nav">
+      <div class="toggle-img">
+        <i class="bi bi-person-circle" style="font-size: 35px;"></i>
+      </div>
+      <div class="toggle-info-link">
+        <ul>
+          <li style="color: #003580; background-color: aliceblue;"><i class="bi bi-view-list"></i> </li>
+          <li><i class="bi bi-person"></i></li>
+          <li><i class="bi bi-check2-square"></i></li>
+          <li><i class="bi bi-credit-card"></i> </li>
+          <li><i class="bi bi-file-earmark-text"></i></li>
+          <li><i class="bi bi-chat-left"></i></li>
+          <li><i class="bi bi-book"></i></li>
+          <li><i class="bi bi-house-door"></i> </li>
+          <li><i class="bi bi-building"></i></li>
+        </ul>
+      </div>
+      <div class="toggle-logout">
+        <i class="bi bi-box-arrow-right"></i>
+      </div>
+    </div>
+
+
+
+    <div class="table-outer-body">
+      <div class="header">
+        <h2>Academic Results</h2>
+        <button class="btn">
+          <img src="download image.png" class="icon">
+          Download Transcript</button>
+      </div>
+
+      <!-- GPA Card -->
+      <div class="gpa-card">
+        <div>
+          <p>Cumulative Grade Point Average</p>
+          <h1>8.42 <span>/ 10.0</span></h1>
+        </div>
+        <div class="right-box">
+          <div class="mini-card">
+            <p>Total Semesters</p>
+            <h3>5</h3>
+          </div>
+          <div class="mini-card">
+            <p>Status</p>
+            <h3 class="status">Excellent</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Semester -->
+      <div class="semester">
+        <div class="semester-header">
+          <h3>Semester 1</h3>
+          <span>Credits: 24 | SGPA: 8.30</span>
+        </div>
+
+        <div class="tab">
+          <table>
+            <thead>
+              <tr>
+                <th>SUBJECT CODE</th>
+                <th>SUBJECT NAME</th>
+                <th>CREDITS</th>
+                <th>INT[40]</th>
+                <th>EXT[60]</th>
+                <th>TOTAL[100]</th>
+                <th>GRADE</th>
+                <th>POINTS</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>MA101</td>
+                <td>Engineering Mathematics I</td>
+                <td>4</td>
+                <td>38</td>
+                <td>62</td>
+                <td>100</td>
+                <td><span class="grade a">A</span></td>
+                <td>8</td>
+              </tr>
+
+              <tr>
+                <td>PH101</td>
+                <td>Engineering Physics</td>
+                <td>4</td>
+                <td>35</td>
+                <td>55</td>
+                <td>90</td>
+                <td><span class="grade a">A</span></td>
+                <td>8</td>
+              </tr>
+
+              <tr>
+                <td>CH101</td>
+                <td>Engineering Chemistry</td>
+                <td>4</td>
+                <td>32</td>
+                <td>50</td>
+                <td>82</td>
+                <td><span class="grade b">B+</span></td>
+                <td>7</td>
+              </tr>
+
+              <tr>
+                <td>EG101</td>
+                <td>Engineering Graphics</td>
+                <td>3</td>
+                <td>40</td>
+                <td>60</td>
+                <td>100</td>
+                <td><span class="grade o">O</span></td>
+                <td>10</td>
+              </tr>
+
+              <tr>
+                <td>CS101</td>
+                <td>Introduction to Programming</td>
+                <td>4</td>
+                <td>36</td>
+                <td>58</td>
+                <td>94</td>
+                <td><span class="grade aplus">A+</span></td>
+                <td>9</td>
+              </tr>
+        </div>
+        </tbody>
+        </table>
+        <button class="dwnload-btn">
+          <i class="bi bi-download"></i>Download Marksheet
+        </button>
+
+      </div>
+
+
+
+
+      <div class="sem">
+        <div class="left">
+          <h3>Semester 2</h3>
+        </div>
+        <div class="right">
+          <sapn>Credits: 24 | SGPA: 8.50</sapn>
+          <span>
+            <div class="arrow"></div>
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+<script src="../JS/student-result-dash.js"></script>
+
+</html>

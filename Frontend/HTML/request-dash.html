@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complaints & Requests</title>
+  <link rel="stylesheet" href="../CSS/request-dash.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="body-dash-student">
+
+    <!-- Nav Bar -->
+    <div class="outer-dash-nav">
+      <div class="student-info-nav">
+        <div class="student-nav-img">
+          <i class="bi bi-person-circle"></i>
+        </div>
+        <div class="student-nav-info">
+          <p>Ayush Singh</p>
+          <p>CS516632</p>
+        </div>
+        <button id="hide-nav"><i class="bi bi-x"></i></button>
+      </div>
+      <div class="dash-info-link">
+        <ul>
+          <a href="student-dash-1.html">
+            <li ><i class="bi bi-view-list"></i>
+              Dashboard</li>
+          </a>
+          <a href="student-profile-dash.html">
+            <li><i class="bi bi-person"></i> Profile</li>
+          </a>
+          <a href="attendance-dash.html">
+            <li><i class="bi bi-check2-square"></i> Attendance</li>
+          </a>
+          <a href="fee-dash.html">
+            <li><i class="bi bi-credit-card"></i> Fee</li>
+          </a>
+          <a href="student-result-dash.html">
+            <li><i class="bi bi-file-earmark-text"></i> Result</li>
+          </a>
+          <a href="request-dash.html" style="color: #003580;">
+            <li style="background-color: aliceblue;"><i class="bi bi-chat-left"></i> Complaints</li>
+          </a>
+          <a href="courses-dash.html">
+            <li><i class="bi bi-book"></i> Courses</li>
+          </a>
+          <a href="hostel-dash.html">
+            <li><i class="bi bi-house-door"></i> Hostel</li>
+          </a>
+          <a href="last-dash.html">
+            <li><i class="bi bi-building"></i> College </li>
+          </a>
+        </ul>
+      </div>
+      <div class="student-log-out">
+        <button><i class="bi bi-box-arrow-right"></i> Logout</button>
+      </div>
+    </div>
+
+    <div class="toggle-dash-nav">
+      <div class="toggle-img">
+        <i class="bi bi-person-circle" style="font-size: 35px;"></i>
+      </div>
+      <div class="toggle-info-link">
+        <ul>
+          <li style="color: #003580; background-color: aliceblue;"><i class="bi bi-view-list"></i> </li>
+          <li><i class="bi bi-person"></i></li>
+          <li><i class="bi bi-check2-square"></i></li>
+          <li><i class="bi bi-credit-card"></i> </li>
+          <li><i class="bi bi-file-earmark-text"></i></li>
+          <li><i class="bi bi-chat-left"></i></li>
+          <li><i class="bi bi-book"></i></li>
+          <li><i class="bi bi-house-door"></i> </li>
+          <li><i class="bi bi-building"></i></li>
+        </ul>
+      </div>
+      <div class="toggle-logout">
+        <i class="bi bi-box-arrow-right"></i>
+      </div>
+    </div>
+
+
+    <!-- Student Info -->
+
+    <div class="outer-dash">
+
+      <div class="container">
+
+        <h2>Complaints & Requests</h2>
+        <p class="sub-text">Raise issues related to college or hostel facilities</p>
+
+        <div class="tabs">
+          <button class="actives">My Complaints</button>
+          <a href="complaint-dash.html" style="text-decoration: none; color: black;"><button>Raise New</button></a>
+        </div>
+
+        <!-- CARD 1 -->
+        <div class="cards">
+          <div class="cards-left">
+            <div class="cards-top">
+              <div class="cards-tag">
+                <span class="tag">College</span>
+                <span class="status resolved">Resolved</span>
+              </div>
+              <span class="date">Feb 10, 2026</span>
+            </div>
+
+            <h3>Library WiFi not working</h3>
+            <p class="desc">
+              The WiFi connection in the library reading room has been down for the past week.
+            </p>
+
+            <div class="response">
+              <strong>OFFICIAL RESPONSE</strong>
+              <p>The issue has been fixed. A new router has been installed.</p>
+            </div>
+          </div>
+
+          <div class="cards-right">
+            <span class="delete"><i class="bi bi-trash3"></i> Delete</span>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="cards">
+          <div class="cards-left">
+            <div class="cards-top">
+              <div class="cards-tag">
+                <span class="tag">Hostel</span>
+                <span class="status progress-">In Progress</span>
+              </div>
+              <span class="date">Mar 05, 2026</span>
+            </div>
+
+            <h3>Water supply issue in Block B</h3>
+            <p class="desc">
+              There is no water supply in Block B bathrooms from 6 AM to 10 AM daily.
+            </p>
+
+            <div class="response">
+              <strong>OFFICIAL RESPONSE</strong>
+              <p>The plumbing team has been informed. Work in progress.</p>
+            </div>
+          </div>
+
+          <div class="cards-right">
+            <span class="delete"><i class="bi bi-trash3"></i> Delete</span>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="cards">
+          <div class="cards-left">
+            <div class="cards-top">
+              <div class="cards-tag">
+                <span class="tag">College</span>
+                <span class="status pending">Pending</span>
+              </div>
+              <span class="date">Mar 20, 2026</span>
+            </div>
+
+            <h3>Canteen food quality</h3>
+            <p class="desc">
+              The food quality at the main canteen has deteriorated significantly.
+            </p>
+          </div>
+
+          <div class="cards-right">
+            <span class="delete"><i class="bi bi-trash3"></i> Delete</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+
+</body>
+  <script src="../JS/request-dash.js"></script>
+</html>

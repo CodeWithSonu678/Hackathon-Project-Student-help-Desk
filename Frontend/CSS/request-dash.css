@@ -1,0 +1,299 @@
+body {
+  background-color: aliceblue;
+}
+
+.outer-dash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 80px;
+  background-color: white;
+}
+
+
+/* Nav Bar */
+.outer-dash-nav {
+  display: none;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+
+.student-info-nav {
+  padding: 10px 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid gray;
+}
+
+.student-nav-info p {
+  margin: 10px;
+}
+
+.student-nav-img {
+  font-size: 50px;
+}
+
+#hide-nav {
+  background: none;
+  border: none;
+}
+
+.dash-info-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.dash-info-link {
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.dash-info-link li {
+  font-size: 17px;
+  list-style: none;
+  padding: 15px;
+  margin: 2px;
+}
+
+.dash-info-link ul {
+  padding: 0px;
+}
+
+.dash-info-link li:hover {
+  transition: 0.2s ease-in-out;
+  background-color: aliceblue;
+  border-bottom: 1px solid #003580;
+}
+
+.student-log-out button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0px 5px 20px 5px;
+}
+
+
+.toggle-dash-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.toggle-info-link ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.toggle-info-link li {
+  font-size: 18px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.toggle-logout {
+  font-size: 15px;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .dash-info-link li {
+    font-size: 15px;
+    padding: 6px;
+    margin: 5px;
+  }
+
+  .toggle-info-link li {
+    font-size: 15px;
+    margin: 5px;
+  }
+
+  .toggle-logout {
+    font-size: 15px;
+    margin: 0px;
+  }
+}
+
+.container {
+  width: 70%;
+  margin: 30px auto;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+.sub-text {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #eaeef5;
+  cursor: pointer;
+}
+
+.tabs .actives{
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* CARD LAYOUT */
+.cards{
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* LEFT CONTENT */
+.cards-left {
+  padding: 20px;
+  width: 80%;
+}
+
+/* RIGHT DELETE COLUMN */
+.cards-right {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #fafafa;
+  border-left: 1px solid #e0e0e0;
+}
+
+/* TOP SECTION */
+.cards-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  background: #eef2ff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.status{
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.resolved {
+  background: #d1fae5;
+  color: green;
+}
+
+.progress-{
+  background: #dbeafe;
+  color: blue;
+}
+
+.pending {
+  background: #fef3c7;
+  color: orange;
+}
+
+.date {
+  color: gray;
+  font-size: 12px;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+.desc {
+  color: #555;
+  font-size: 14px;
+}
+
+.response {
+  background: #f1f5ff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.response strong {
+  font-size: 12px;
+  color: #3b82f6;
+}
+
+.cards-tag{
+  display: flex;
+}
+
+/* DELETE BUTTON */
+.delete {
+  color: red;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+@media (max-width:500px){
+  .cards{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-tag{
+    flex-direction: column;
+  }
+  .tag{
+    margin-bottom: 10px;
+  }
+
+  .cards-left{
+    padding: 5px;
+  }
+
+  .delete{
+    margin: 10px;
+  }
+
+  .tabs{
+    flex-direction: column;
+  }
+
+  .tabs button{
+    padding: 10px;
+  }
+}

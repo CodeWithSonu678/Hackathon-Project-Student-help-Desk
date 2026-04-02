@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Information</title>
+  <link rel="stylesheet" href="../CSS/hostel-dash.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="body-dash-student">
+
+    <!-- Nav Bar -->
+    <div class="outer-dash-nav">
+      <div class="student-info-nav">
+        <div class="student-nav-img">
+          <i class="bi bi-person-circle"></i>
+        </div>
+        <div class="student-nav-info">
+          <p>Ayush Singh</p>
+          <p>CS516632</p>
+        </div>
+        <button id="hide-nav"><i class="bi bi-x"></i></button>
+      </div>
+      <div class="dash-info-link">
+        <ul>
+          <a href="student-dash-1.html" >
+            <li ><i class="bi bi-view-list"></i>
+              Dashboard</li>
+          </a>
+          <a href="student-profile-dash.html">
+            <li><i class="bi bi-person"></i> Profile</li>
+          </a>
+          <a href="attendance-dash.html">
+            <li><i class="bi bi-check2-square"></i> Attendance</li>
+          </a>
+          <a href="fee-dash.html">
+            <li><i class="bi bi-credit-card"></i> Fee</li>
+          </a>
+          <a href="student-result-dash.html">
+            <li><i class="bi bi-file-earmark-text"></i> Result</li>
+          </a>
+          <a href="request-dash.html">
+            <li><i class="bi bi-chat-left"></i> Complaints</li>
+          </a>
+          <a href="courses-dash.html">
+            <li><i class="bi bi-book"></i> Courses</li>
+          </a>
+          <a href="hostel-dash.html" style="color: #003580;">
+            <li style="background-color: aliceblue;"><i class="bi bi-house-door"></i> Hostel</li>
+          </a>
+          <a href="last-dash.html">
+            <li><i class="bi bi-building"></i> College </li>
+          </a>
+        </ul>
+      </div>
+      <div class="student-log-out">
+        <button><i class="bi bi-box-arrow-right"></i> Logout</button>
+      </div>
+    </div>
+
+    <div class="toggle-dash-nav">
+      <div class="toggle-img">
+        <i class="bi bi-person-circle" style="font-size: 35px;"></i>
+      </div>
+      <div class="toggle-info-link">
+        <ul>
+          <li style="color: #003580; background-color: aliceblue;"><i class="bi bi-view-list"></i> </li>
+          <li><i class="bi bi-person"></i></li>
+          <li><i class="bi bi-check2-square"></i></li>
+          <li><i class="bi bi-credit-card"></i> </li>
+          <li><i class="bi bi-file-earmark-text"></i></li>
+          <li><i class="bi bi-chat-left"></i></li>
+          <li><i class="bi bi-book"></i></li>
+          <li><i class="bi bi-house-door"></i> </li>
+          <li><i class="bi bi-building"></i></li>
+        </ul>
+      </div>
+      <div class="toggle-logout">
+        <i class="bi bi-box-arrow-right"></i>
+      </div>
+    </div>
+
+
+    <!-- Student Info -->
+
+    <div class="outer-dash">
+      <div class="container">
+
+        <!-- Heading -->
+        <div class="header">
+          <h2>Hostel Information</h2>
+          <p>Your accommodation and facility details</p>
+        </div>
+
+        <div class="main">
+
+          <!-- LEFT CARD -->
+          <div class="card left">
+            <div class="card-header">
+              🏠 Accommodation Details
+            </div>
+
+            <div class="grid">
+              <div>
+                <p class="label">Hostel Name</p>
+                <h4>Tagore Boys Hostel</h4>
+              </div>
+
+              <div>
+                <p class="label">Block</p>
+                <h4>Block B</h4>
+              </div>
+
+              <div>
+                <p class="label">Room Number</p>
+                <h3 class="room">B-214</h3>
+              </div>
+
+              <div>
+                <p class="label">Floor & Type</p>
+                <h4>2 Floor</h4>
+                <p>Double Sharing</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="mess">
+              <p class="label">Mess Subscription</p>
+              <h4>Veg + Non-Veg</h4>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="right">
+
+            <!-- CONTACT CARD -->
+            <div class="card">
+              <div class="card-header">👤 Contact Persons</div>
+
+              <div class="inner-card">
+                <h4>Hostel Warden</h4>
+                <p>👤 Dr. Suresh Patil</p>
+                <small>Chief Warden</small>
+
+                <p>📞 9823456780</p>
+                <p>✉ warden.tagore@college.edu.in</p>
+              </div>
+            </div>
+
+            <!-- FEE STATUS -->
+            <div class="fee-card">
+              <div>
+                <p>Hostel Fee Status</p>
+                <span class="paid">Paid: ₹24,000</span>
+              </div>
+              <div class="due">Due: ₹24,000</div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="facility-card">
+
+          <h3 class="title">Facilities & Rules</h3>
+          <div class="divider"></div>
+
+          <div class="facility-grid">
+
+            <!-- LEFT SIDE -->
+            <div class="facilities mb-4">
+              <h4>Available Facilities</h4>
+            </div>
+            <div class="list">
+              <ul>
+                <li>24×7 Wi-Fi Connectivity</li>
+                <li>Indoor Sports Room</li>
+                <li>Common TV Lounge</li>
+                <li>Laundry Service</li>
+                <li>CCTV Surveillance</li>
+                <li>Medical Room & First Aid</li>
+              </ul>
+
+              <ul>
+                <li>Reading Room & Library</li>
+                <li>Gymnasium</li>
+                <li>Hot Water (6AM - 9AM, 6PM - 9PM)</li>
+                <li>Canteen (6AM - 10PM)</li>
+                <li>Generator Backup</li>
+                <li>Visitor Room</li>
+              </ul>
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="rules">
+              <h4>Important Rules</h4>
+
+              <div class="rule">1. Entry time: 6:00 AM - 10:30 PM (curfew strictly followed)</div>
+              <div class="rule">2. Visitors allowed only from 4 PM - 7 PM</div>
+              <div class="rule">3. No cooking or electrical appliances in rooms</div>
+              <div class="rule">4. Mess attendance mandatory</div>
+              <div class="rule">5. Maintain silence during exams</div>
+              <div class="rule">6. No ragging - punishable offense</div>
+              <div class="rule">7. Alcohol & narcotics prohibited</div>
+              <div class="rule">8. Room inspection anytime</div>
+              <div class="rule">9. Damage will be charged</div>
+              <div class="rule">10. Leave apply 24 hrs before</div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+  <script src="../JS/hostel-dash.js"></script>
+</html>
