@@ -142,6 +142,7 @@ li a button {
         flex-direction: column;
         padding: 20vh 20vh;
         margin-top: 70px;
+        width: 100%;
 }
 
 #hero-txt1 {
