@@ -187,6 +187,10 @@ li a button {
 }
 
 @media (max-width:768px) {
+        .outer-hero{
+                padding: 50px;
+        }
+
         #hero-txt1 {
                 width: 100%;
                 font-size: 15px;

@@ -307,13 +307,10 @@ body {
         border-radius: 8px;
 }
 
-.f-head {
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-        font-size: 25px;
+.family-head {
+       font-size: 25px;
+       margin: 20px 0px;
         font-weight: bold;
-        margin: 20px 0px 0px 0px;
 }
 
 .fam-info p {
