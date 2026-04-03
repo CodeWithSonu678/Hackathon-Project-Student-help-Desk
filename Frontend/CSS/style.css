@@ -319,7 +319,7 @@ li a button {
         }
 }
 
-@media (max-width:768px) {
+@media (max-width:1250px) {
         .about-banner2 {
                 flex-direction: column;
                 height: auto;

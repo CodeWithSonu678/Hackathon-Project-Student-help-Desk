@@ -524,3 +524,19 @@ body {
         background: none;
         border: none;
 }
+
+@media (max-width: 768px){
+
+        .edit-outer{
+                width: 80%;
+                margin: 200px 0px;
+        }
+
+        .e-out{
+                overflow-y: scroll;
+        }
+
+        .f-row{
+                flex-direction: column;
+        }
+}
