@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../CSS/college-event-dash.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+        <div class="body-dash-college">
+
+                <!-- Nav Bar -->
+                <div class="outer-dash-nav">
+                        <div class="college-info-nav">
+                                <div class="college-nav-img">
+                                        <img src="../img/foot-logo.png" alt="">
+                                </div>
+                                <div class="college-nav-info">
+                                        <p style="font-weight: bold;">College Admin</p>
+                                </div>
+                                <button id="hide-nav"><i class="bi bi-x"></i></button>
+                        </div>
+                        <div class="dash-info-link">
+                                <ul>
+                                        <a href="college-dash.html">
+                                                <li><i class="bi bi-view-list"></i>
+                                                        Dashboard</li>
+                                        </a>
+                                        <a href="college-notice.html">
+                                                <li><i class="bi bi-bell"></i>
+                                                        Notices</li>
+                                        </a>
+                                        <a href=".html">
+                                                <li><i class="bi bi-people-fill"></i> Staff</li>
+                                        </a>
+                                        <a href="college-student-dash.html">
+                                                <li><i class="bi bi-mortarboard"></i> Students</li>
+                                        </a>
+                                        <a href="college-event-dash.html" style="color: #003580;">
+                                                <li style="background-color: aliceblue;"><i class="bi bi-calendar"></i>
+                                                        Event</li>
+                                        </a>
+                                        <a href="request-dash.html">
+                                                <li><i class="bi bi-building"></i> Hostel</li>
+                                        </a>
+                                        <a href="courses-dash.html">
+                                                <li><i class="bi bi-book"></i> Academics</li>
+                                        </a>
+                                        <a href="hostel-dash.html">
+                                                <li><i class="bi bi-wrench"></i> Facilities</li>
+                                        </a>
+                                        <a href="last-dash.html">
+                                                <li><i class="bi bi-image-alt"></i> Gallery</li>
+                                        </a>
+                                        <a href="last-dash.html">
+                                                <li><i class="bi bi-exclamation-circle"></i> Complaints </li>
+                                        </a>
+                                        <a href="last-dash.html">
+                                                <li><i class="bi bi-telephone"></i> Contact</li>
+                                        </a>
+                                </ul>
+                        </div>
+                </div>
+
+                <div class="toggle-dash-nav">
+                        <div class="toggle-img">
+                                <img src="../img/foot-logo.png" alt="">
+                        </div>
+                        <div class="toggle-info-link">
+                                <ul>
+                                        <li><i class="bi bi-view-list"></i></li>
+                                        <li><i class="bi bi-bell"></i></li>
+                                        <li><i class="bi bi-people-fill"></i></li>
+                                        <li><i class="bi bi-mortarboard"></i> </li>
+                                        <li style="color: #003580; background-color: aliceblue;"><i
+                                                        class="bi bi-calendar"></i> </li>
+                                        <li><i class="bi bi-building"></i> </li>
+                                        <li><i class="bi bi-book"></i></li>
+                                        <li><i class="bi bi-wrench"></i> </li>
+                                        <li><i class="bi bi-image-alt"></i> </li>
+                                        <li><i class="bi bi-exclamation-circle"></i></li>
+                                        <li><i class="bi bi-telephone"></i></li>
+                                </ul>
+                        </div>
+                </div>
+
+
+
+
+                <!-- College Info -->
+
+                <div class="outer-dash">
+
+                        <div class="upper-nav">
+                                <div class="upper-nav-btn">
+
+                                </div>
+                                <div class="upper-nav-info">
+                                        <div class="upper-nav-txt">
+                                                <p style="font-weight: bold;">Admin User</p>
+                                                <p style="font-size: 13px;">Principal Office</p>
+                                        </div>
+                                        <div class="upper-nav-img">
+                                                <i class="bi bi-person-circle"></i>
+                                        </div>
+                                </div>
+
+                        </div>
+
+                        <!-- Events -->
+                        <div class="event-outer-body">
+                                <div class="event-head">
+                                        <div class="event-txt">
+                                                <div class="e-heading">
+                                                        <i class="bi bi-calendar"></i>
+                                                        <p>Event Calender</p>
+                                                </div>
+                                                <p>Manage enrollments, verification, and records</p>
+                                        </div>
+                                        <div class="event-edit-btn">
+                                                <button id="edit-btn"><span>+</span>Add Student</button>
+                                        </div>
+
+                                </div>
+
+                                <div class="event-card-outer">
+                                        <div class="e-inner">
+                                                <div class="event-card-body">
+                                                        <div class="event-date">
+                                                                <div class="e-date">
+                                                                        <p style="font-weight: bold; font-size: 18px;">
+                                                                                APR</p>
+                                                                        <p style="font-weight: bold; font-size: 25px;">
+                                                                                10</p>
+                                                                        <p>2026</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="event-info">
+                                                                <div class="e-tag">
+                                                                        <p>CULTURAL</p>
+                                                                </div>
+                                                                <div class="e-head">
+                                                                        <p>Annual Cultural Fest</p>
+                                                                </div>
+                                                                <div class="e-txt">
+                                                                        <p>The annual cultural festival celebrating
+                                                                                arts, music and dance.
+                                                                        </p>
+                                                                </div>
+                                                                <div class="e-time">
+                                                                        <p><i class="bi bi-clock"></i> 8:30AM</p>
+                                                                        <p><i class="bi bi-geo-alt"></i> College
+                                                                                Auditorium</p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="event-card-body">
+                                                        <div class="event-date">
+                                                                <div class="e-date">
+                                                                        <p style="font-weight: bold; font-size: 18px;">
+                                                                                APR</p>
+                                                                        <p style="font-weight: bold; font-size: 25px;">
+                                                                                10</p>
+                                                                        <p>2026</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="event-info">
+                                                                <div class="e-tag">
+                                                                        <p>CULTURAL</p>
+                                                                </div>
+                                                                <div class="e-head">
+                                                                        <p>Annual Cultural Fest</p>
+                                                                </div>
+                                                                <div class="e-txt">
+                                                                        <p>The annual cultural festival celebrating
+                                                                                arts, music and dance.
+                                                                        </p>
+                                                                </div>
+                                                                <div class="e-time">
+                                                                        <p><i class="bi bi-clock"></i> 8:30AM</p>
+                                                                        <p><i class="bi bi-geo-alt"></i> College
+                                                                                Auditorium</p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="e-inner">
+                                                <div class="event-card-body">
+                                                        <div class="event-date">
+                                                                <div class="e-date">
+                                                                        <p style="font-weight: bold; font-size: 18px;">
+                                                                                APR</p>
+                                                                        <p style="font-weight: bold; font-size: 25px;">
+                                                                                10</p>
+                                                                        <p>2026</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="event-info">
+                                                                <div class="e-tag">
+                                                                        <p>CULTURAL</p>
+                                                                </div>
+                                                                <div class="e-head">
+                                                                        <p>Annual Cultural Fest</p>
+                                                                </div>
+                                                                <div class="e-txt">
+                                                                        <p>The annual cultural festival celebrating
+                                                                                arts, music and dance.
+                                                                        </p>
+                                                                </div>
+                                                                <div class="e-time">
+                                                                        <p><i class="bi bi-clock"></i> 8:30AM</p>
+                                                                        <p><i class="bi bi-geo-alt"></i> College
+                                                                                Auditorium</p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="event-card-body">
+                                                        <div class="event-date">
+                                                                <div class="e-date">
+                                                                        <p style="font-weight: bold; font-size: 18px;">
+                                                                                APR</p>
+                                                                        <p style="font-weight: bold; font-size: 25px;">
+                                                                                10</p>
+                                                                        <p>2026</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="event-info">
+                                                                <div class="e-tag">
+                                                                        <p>CULTURAL</p>
+                                                                </div>
+                                                                <div class="e-head">
+                                                                        <p>Annual Cultural Fest</p>
+                                                                </div>
+                                                                <div class="e-txt">
+                                                                        <p>The annual cultural festival celebrating
+                                                                                arts, music and dance.
+                                                                        </p>
+                                                                </div>
+                                                                <div class="e-time">
+                                                                        <p><i class="bi bi-clock"></i> 8:30AM</p>
+                                                                        <p><i class="bi bi-geo-alt"></i> College
+                                                                                Auditorium</p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Edit -->
+
+                        <div class="e-out">
+                                <div class="edit-outer" id="e-outer">
+                                        <div class="edit-head-txt">
+                                                <div class="e-head">
+                                                        <p class="edit-head">New Announcement</p>
+                                                </div>
+                                                <div class="e-cancel">
+                                                        <button id="edit-cancel"><i class="bi bi-x"
+                                                                        style="font-size: 25px;"></i></button>
+                                                </div>
+                                        </div>
+                                        <div class="f-row">
+                                                <div class="input-row">
+                                                        <label for="">Event Titel</label>
+                                                        <input type="txt" placeholder="Titel of Event">
+                                                </div>
+                                                <div class="form-d">
+                                                        <div class="input-row">
+                                                                <label for="">Date & Time</label>
+                                                                <input type="datetime-local" name="" id="">
+                                                        </div>
+                                                        <div class="input-row">
+                                                                <label for="">Category</label>
+                                                                <select name="" id="">
+                                                                        <option value="">CULTURAL</option>
+                                                                        <option value="">SPORTS</option>
+                                                                        <option value="">ACADEMIC</option>
+                                                                </select>
+                                                        </div>
+                                                </div>
+                                                <div class="input-row">
+                                                        <label for="">Location</label>
+                                                        <input type="text" placeholder="College..">
+                                                </div>
+                                                <div class="input-row">
+                                                        <label for="">Details</label>
+                                                        <input type="text" placeholder="Event Details">
+                                                </div>
+                                        </div>
+                                        <div class="save-edit-btn">
+                                                <button style="background-color: #003580; color: white;">Save
+                                                        Changes</button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+</body>
+<script src="../JS/college-event-dash.js"></script>
+
+</html>

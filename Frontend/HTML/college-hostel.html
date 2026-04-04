@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../CSS/college-hostel.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+        <div class="body-dash-college">
+
+                <!-- Nav Bar -->
+                <div class="outer-dash-nav">
+                        <div class="college-info-nav">
+                                <div class="college-nav-img">
+                                        <img src="../img/foot-logo.png" alt="">
+                                </div>
+                                <div class="college-nav-info">
+                                        <p style="font-weight: bold;">College Admin</p>
+                                </div>
+                                <button id="hide-nav"><i class="bi bi-x"></i></button>
+                        </div>
+                        <div class="dash-info-link">
+                                <ul>
+                                        <a href="college-dash.html">
+                                                <li><i class="bi bi-view-list"></i>
+                                                        Dashboard</li>
+                                        </a>
+                                        <a href="college-notice.html">
+                                                <li><i class="bi bi-bell"></i>
+                                                        Notices</li>
+                                        </a>
+                                        <a href=".html">
+                                                <li><i class="bi bi-people-fill"></i> Staff</li>
+                                        </a>
+                                        <a href="college-student-dash.html">
+                                                <li><i class="bi bi-mortarboard"></i> Students</li>
+                                        </a>
+                                        <a href="college-event-dash.html">
+                                                <li><i class="bi bi-calendar"></i>
+                                                        Event</li>
+                                        </a>
+                                        <a href="college-hostel.html" style="color: #003580;">
+                                                <li style="background-color: aliceblue;"><i class="bi bi-building"></i>
+                                                        Hostel</li>
+                                        </a>
+                                        <a href="college-academic.html">
+                                                <li><i class="bi bi-book"></i>
+                                                        Academics</li>
+                                        </a>
+                                        <a href="hostel-dash.html">
+                                                <li><i class="bi bi-wrench"></i> Facilities</li>
+                                        </a>
+                                        <a href="last-dash.html">
+                                                <li><i class="bi bi-image-alt"></i> Gallery</li>
+                                        </a>
+                                        <a href="last-dash.html">
+                                                <li><i class="bi bi-exclamation-circle"></i> Complaints </li>
+                                        </a>
+                                        <a href="last-dash.html">
+                                                <li><i class="bi bi-telephone"></i> Contact</li>
+                                        </a>
+                                </ul>
+                        </div>
+                </div>
+
+                <div class="toggle-dash-nav">
+                        <div class="toggle-img">
+                                <img src="../img/foot-logo.png" alt="">
+                        </div>
+                        <div class="toggle-info-link">
+                                <ul>
+                                        <li><i class="bi bi-view-list"></i></li>
+                                        <li><i class="bi bi-bell"></i></li>
+                                        <li><i class="bi bi-people-fill"></i></li>
+                                        <li><i class="bi bi-mortarboard"></i> </li>
+                                        <li><i class="bi bi-calendar"></i> </li>
+                                        <li style="color: #003580; background-color: aliceblue;"><i
+                                                        class="bi bi-building"></i> </li>
+                                        <li><i class="bi bi-book"></i></li>
+                                        <li><i class="bi bi-wrench"></i> </li>
+                                        <li><i class="bi bi-image-alt"></i> </li>
+                                        <li><i class="bi bi-exclamation-circle"></i></li>
+                                        <li><i class="bi bi-telephone"></i></li>
+                                </ul>
+                        </div>
+                </div>
+
+
+
+
+                <!-- College Info -->
+
+                <div class="outer-dash">
+                        <div class="upper-nav">
+                                <div class="upper-nav-btn">
+
+                                </div>
+                                <div class="upper-nav-info">
+                                        <div class="upper-nav-txt">
+                                                <p style="font-weight: bold;">Admin User</p>
+                                                <p style="font-size: 13px;">Principal Office</p>
+                                        </div>
+                                        <div class="upper-nav-img">
+                                                <i class="bi bi-person-circle"></i>
+                                        </div>
+                                </div>
+
+                        </div>
+
+                        <!-- hostel -->
+
+                        <div class="hostel-management-outer">
+                                <p class="h-head">Hostel Management</p>
+                                <div class="hostel-nav">
+                                        <div class="h-nav">
+                                                <div class="hostel-link">
+                                                        <button style="background-color: #003580; color: white;">
+                                                                Details</button>
+                                                </div>
+                                                <div class="hostel-link">
+                                                        <button>Students</button>
+                                                </div>
+                                                <div class="hostel-link">
+                                                        <button>Complaints</button>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="staff-outer">
+                                        <div class="staff-head">
+                                                <p>Staff Details</p>
+                                                <button>+ Add Staff</button>
+                                        </div>
+                                        <div class="staff-card-outer">
+                                                <div class="staff-card">
+                                                        <div class="staff-img">
+                                                                <i class="bi bi-person-circle"></i>
+                                                        </div>
+                                                        <div class="staff-info">
+                                                                <div class="s-name">
+                                                                        <span>Mr. Suresh Nair</span>
+                                                                </div>
+                                                                <div class="s-tag">
+                                                                        <span>Warden</span>
+                                                                </div>
+                                                                <div class="s-num">
+                                                                        <span>9823214575</span>
+                                                                </div>
+                                                        </div>
+                                                        <div class="staff-del">
+                                                                <button><i class="bi bi-trash"></i></button>
+                                                        </div>
+                                                </div>
+                                                <div class="staff-card">
+                                                        <div class="staff-img">
+                                                                <i class="bi bi-person-circle"></i>
+                                                        </div>
+                                                        <div class="staff-info">
+                                                                <div class="s-name">
+                                                                        <span>Mr. Suresh Nair</span>
+                                                                </div>
+                                                                <div class="s-tag">
+                                                                        <span>Warden</span>
+                                                                </div>
+                                                                <div class="s-num">
+                                                                        <span>9823214575</span>
+                                                                </div>
+                                                        </div>
+                                                        <div class="staff-del">
+                                                                <button><i class="bi bi-trash"></i></button>
+                                                        </div>
+                                                </div>
+                                                <div class="staff-card">
+                                                        <div class="staff-img">
+                                                                <i class="bi bi-person-circle"></i>
+                                                        </div>
+                                                        <div class="staff-info">
+                                                                <div class="s-name">
+                                                                        <span>Mr. Suresh Nair</span>
+                                                                </div>
+                                                                <div class="s-tag">
+                                                                        <span>Warden</span>
+                                                                </div>
+                                                                <div class="s-num">
+                                                                        <span>9823214575</span>
+                                                                </div>
+                                                        </div>
+                                                        <div class="staff-del">
+                                                                <button><i class="bi bi-trash"></i></button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <!-- Details -->
+                                <p class="h-details-head">Hostel Details</p>
+                                <div class="hostel-details-out">
+
+                                        <div class="hostel-details-card">
+                                                <span>Hostel Name</span>
+                                                <p>College Hostel</p>
+                                        </div>
+                                        <div class="hostel-details-card">
+                                                <span>Capacity</span>
+                                                <p>200 Students</p>
+                                        </div>
+                                        <div class="hostel-details-card">
+                                                <span>Contact Number</span>
+                                                <p>+91 0000000000</p>
+                                        </div>
+                                        <div class="hostel-details-card">
+                                                <span>Address</span>
+                                                <p>Inside College Campus</p>
+                                        </div>
+                                </div>
+
+                                <div class="e-out">
+                                        <div class="edit-outer" id="e-outer">
+                                                <div class="staff-edit-outer">
+                                                        <div class="edit-head-txt">
+                                                                <div class="e-head">
+                                                                        <p class="edit-head">New Announcement</p>
+                                                                </div>
+                                                                <div class="e-cancel">
+                                                                        <button id="edit-cancel"><i class="bi bi-x"
+                                                                                        style="font-size: 25px;"></i></button>
+                                                                </div>
+                                                        </div>
+                                                        <div class="f-row">
+                                                                <div class="input-row">
+                                                                        <label for="">Name</label>
+                                                                        <input type="txt"
+                                                                                placeholder="Enter Staff Name">
+                                                                </div>
+                                                                <div class="input-row">
+                                                                        <label for="">Category</label>
+                                                                        <select name="" id="">
+                                                                                <option value="">Mess Staff</option>
+                                                                                <option value="">Head Warden</option>
+                                                                                <option value="">Warden</option>
+                                                                        </select>
+                                                                </div>
+                                                                <div class="input-row">
+                                                                        <label for="">Contact Number</label>
+                                                                        <input type="text"
+                                                                                placeholder="Enter Contact Number">
+                                                                </div>
+                                                        </div>
+                                                        <div class="save-edit-btn">
+                                                                <button
+                                                                        style="background-color: #003580; color: white;">Save
+                                                                        Changes</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                </div>
+
+                        </div>
+
+
+                        <!-- Student Hostel -->
+                        <div class="std-table">
+                                <p class="std-head">Student Table</p>
+                                <div class="hostel-s-outer">
+                                        <table>
+                                                <tr>
+                                                        <th>Name</th>
+                                                        <th>Enrollment No</th>
+                                                        <th>Course</th>
+                                                        <th>Room</th>
+                                                        <th>Admission Date</th>
+                                                </tr>
+                                                <tr>
+                                                        <th>Rahul Gupta</th>
+                                                        <td>EN20210001</td>
+                                                        <td>B.Sc Mathematics</td>
+                                                        <td>A-101</td>
+                                                        <td>2021-07-20</td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Rahul Gupta</th>
+                                                        <td>EN20210001</td>
+                                                        <td>B.Sc Mathematics</td>
+                                                        <td>A-101</td>
+                                                        <td>2021-07-20</td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Rahul Gupta</th>
+                                                        <td>EN20210001</td>
+                                                        <td>B.Sc Mathematics</td>
+                                                        <td>A-101</td>
+                                                        <td>2021-07-20</td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Rahul Gupta</th>
+                                                        <td>EN20210001</td>
+                                                        <td>B.Sc Mathematics</td>
+                                                        <td>A-101</td>
+                                                        <td>2021-07-20</td>
+                                                </tr>
+                                        </table>
+                                </div>
+                        </div>
+
+
+                        <div class="std-cpl">
+                                <p class="cpl-head">Hostel Complaints</p>
+                                <div class="cpl-table">
+                                        <table>
+                                                <tr>
+                                                        <th>Complaint</th>
+                                                        <th>Subject</th>
+                                                        <th>Status</th>
+                                                        <th>Date</th>
+                                                        <th>Action</th>
+                                                </tr>
+                                                <tr>
+                                                        <th>Rahul Gupta</th>
+                                                        <th>Hostel Maintenance Issue</th>
+                                                        <td class="s-pen">Pending</td>
+                                                        <td>25/03/2026</td>
+                                                        <td><button>Review</button></td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Rahul Gupta</th>
+                                                        <th>Hostel Maintenance Issue</th>
+                                                        <td class="s-done">Solved</td>
+                                                        <td>25/03/2026</td>
+                                                        <td><button>Review</button></td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Rahul Gupta</th>
+                                                        <th>Hostel Maintenance Issue</th>
+                                                        <td class="s-rew">Reviewed</td>
+                                                        <td>25/03/2026</td>
+                                                        <td><button>Review</button></td>
+                                                </tr>
+                                        </table>
+                                </div>
+                        </div>
+
+
+
+
+
+                </div>
+        </div>
+
+</body>
+<script src="../JS/college-hostel.js"></script>
+
+</html>

@@ -1,5 +1,5 @@
 body {
-  background-color: aliceblue;
+        background-color: aliceblue;
 }
 
 .outer-dash {
@@ -42,7 +42,7 @@ body {
         margin: 10px;
 }
 
-.college-nav-img img{
+.college-nav-img img {
         height: 50px;
 }
 
@@ -101,7 +101,7 @@ body {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.toggle-img img{
+.toggle-img img {
         height: 40px;
 }
 
@@ -122,14 +122,14 @@ body {
 }
 
 @media (max-width: 768px) {
-       
+
         .dash-info-link li {
                 font-size: 15px;
                 padding: 6px;
                 margin: 5px;
         }
 
-        .toggle-info-link li{
+        .toggle-info-link li {
                 font-size: 15px;
                 margin: 5px;
         }
@@ -141,7 +141,7 @@ body {
 }
 
 /* Upper Nav */
-.upper-nav{
+.upper-nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -152,42 +152,42 @@ body {
         background-color: white;
 }
 
-.upper-nav-info{
+.upper-nav-info {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
 }
 
-.upper-nav-img{
+.upper-nav-img {
         font-size: 40px;
         margin: 0px 40px 0px 20px;
 }
 
-.upper-nav-txt p{
+.upper-nav-txt p {
         margin: 0px;
 }
-/* Student Dashboard */
 
-.student-outer-body{
-        padding: 20px;
+/* Academic */
+.academic-outer-body {
+        padding: 10px;
         width: 100%;
 }
 
-.student-head{
+.academic-head {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0px 15px;
 }
 
-.student-edit-btn button{
+.academic-edit-btn button {
         background-color: #003580;
         color: white;
         border-radius: 20px;
         padding: 5px 10px;
 }
 
-.s-heading{
+.a-heading {
         display: flex;
         align-items: baseline;
         justify-content: space-evenly;
@@ -195,11 +195,11 @@ body {
         font-weight: bold;
 }
 
-.s-heading p{
+.a-heading p {
         margin: 0%;
 }
 
-.student-txt{
+.academic-txt {
         display: flex;
         align-items: baseline;
         justify-content: center;
@@ -207,224 +207,71 @@ body {
         font-size: 14px;
 }
 
-.search-std input{
-        margin: 20px;
-        border: none;
-        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 8px;
-        padding: 10px 20px;
-        background-color: aliceblue;
-}
-
-.search-std button{
-        border: none;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 8px;
-        background-color: #003580;
-}
-
 /* Table */
-
-.std-table{
-        overflow-x: scroll;
-}
 
 table{
         width: 100%;
         border-collapse: separate;
-        border-spacing: 20px 0px;
 }
 
-td, th{
-        padding: 10px 40px 0px 10px;
+th, td{
+        padding: 10px 40px;
 }
 
-.std-detail{
-        display: flex;
-        align-items: center;
-        justify-content: start;
+.table-outer{
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 12px;
+        padding: 30px 10px;
+        overflow-x: scroll;
 }
 
-.std-detail i{
+.table-outer p{
         font-size: 25px;
-        margin: 0px 20px;
-}
-
-.std-info span{
-        font-size: 12px;
-        margin: 0px;
-}
-
-.std-info p{
         font-weight: bold;
-        margin: 0px;
+        margin-left: 20px;
 }
 
-.status-v span{
-        color: green;
-        background-color: rgba(0, 128, 0, 0.168);
-        padding: 5px;
-        border-radius: 8px;
+.edit-table-outer{
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 12px;
+        padding: 30px 10px;
+        overflow-x: scroll;
 }
 
-.status-p span{
-        color: orange;
-        background-color: rgba(255, 255, 0, 0.182);
-        padding: 5px;
-        border-radius: 8px;
+.edit-table-outer p{
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 20px;
 }
 
-.status-r span{
-        color: red;
-        background-color: rgba(255, 0, 0, 0.187);
-        padding: 5px;
-        border-radius: 8px;
-}
-
-td button{
+table td button{
         background: none;
         border: none;
         color: red;
 }
 
-@media (max-width: 568px){
+.edit-table-head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
 
-        .student-head{
-                flex-direction: column;
-        }
+.edit-table-head button{
+        border: none;
+        padding: 5px 10px;
+        border-radius: 12px;
+        font-weight: 600;
+}
 
-        .search-std{
-                display: flex;
-                align-items: center;
+@media (max-width:550px){
+        .academic-head{
                 justify-content: center;
+                align-items: center;
                 flex-direction: column;
         }
-}
 
-
-@media (max-width: 400px){
-        .s-heading{
-                font-size: 22px;
-        }
-}
-
-
-/* Edit */
-
-.edit-outer {
-        background-color: white;
-        padding: 30px;
-        width: 50%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 8px;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1000;
-        display: none;
-}
-
-.edit-head {
-        font-size: 25px;
-        font-weight: bold;
-        margin: 0px;
-}
-
-.edit-txt {
-        font-size: 15px;
-}
-
-.f-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin: 10px 0px;
-}
-
-.input-row {
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-        flex-direction: column;
-        margin: 10px 0px;
-}
-
-.input-row label {
-        font-size: 13px;
-        font-weight: bold;
-        margin: 0px;
-        color: black;
-}
-
-.input-row input {
-        padding: 8px;
-        border-radius: 8px;
-        border: 1px solid gray;
-        width: 100%;
-        height: 35px;
-}
-
-.input-row input:focus {
-        outline: none;
-        border-color: #003580;
-        box-shadow: 0 0 5px rgba(0, 53, 128, 0.5);
-}
-
-.input-row select{
-        font-size: 15px;
-        padding: 8px;
-        border-radius: 8px;
-        border: 1px solid gray;
-        width: 100%;
-        height: 35px;
-}
-
-.input-row select:focus{
-         outline: none;
-        border-color: #003580;
-        box-shadow: 0 0 5px rgba(0, 53, 128, 0.5);
-}
-
-.save-edit-btn {
-        display: flex;
-        align-items: end;
-        justify-content: flex-end;
-}
-
-.save-edit-btn button {
-        border: none;
-        border-radius: 8px;
-        padding: 8px 20px;
-        font-size: 14px;
-        cursor: pointer;
-        margin: 0px 5px;
-}
-
-.edit-head-txt{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-}
-
-.e-cancel button{
-        background: none;
-        border: none;
-}
-
-@media (max-width: 768px){
-
-        .edit-outer{
-                width: 80%;
-                margin: 200px 0px;
-        }
-
-        .e-out{
-                overflow-y: scroll;
-        }
-
-        .f-row{
+        .edit-table-head {
+                justify-content: center;
                 flex-direction: column;
         }
 }

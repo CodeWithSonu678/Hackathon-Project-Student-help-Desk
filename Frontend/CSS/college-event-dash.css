@@ -1,5 +1,5 @@
 body {
-  background-color: aliceblue;
+        background-color: aliceblue;
 }
 
 .outer-dash {
@@ -42,7 +42,7 @@ body {
         margin: 10px;
 }
 
-.college-nav-img img{
+.college-nav-img img {
         height: 50px;
 }
 
@@ -101,7 +101,7 @@ body {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.toggle-img img{
+.toggle-img img {
         height: 40px;
 }
 
@@ -122,14 +122,14 @@ body {
 }
 
 @media (max-width: 768px) {
-       
+
         .dash-info-link li {
                 font-size: 15px;
                 padding: 6px;
                 margin: 5px;
         }
 
-        .toggle-info-link li{
+        .toggle-info-link li {
                 font-size: 15px;
                 margin: 5px;
         }
@@ -141,7 +141,7 @@ body {
 }
 
 /* Upper Nav */
-.upper-nav{
+.upper-nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -152,42 +152,43 @@ body {
         background-color: white;
 }
 
-.upper-nav-info{
+.upper-nav-info {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
 }
 
-.upper-nav-img{
+.upper-nav-img {
         font-size: 40px;
         margin: 0px 40px 0px 20px;
 }
 
-.upper-nav-txt p{
+.upper-nav-txt p {
         margin: 0px;
 }
-/* Student Dashboard */
 
-.student-outer-body{
+/* Event */
+
+.event-outer-body {
         padding: 20px;
         width: 100%;
 }
 
-.student-head{
+.event-head {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0px 15px;
 }
 
-.student-edit-btn button{
+.event-edit-btn button {
         background-color: #003580;
         color: white;
         border-radius: 20px;
         padding: 5px 10px;
 }
 
-.s-heading{
+.e-heading {
         display: flex;
         align-items: baseline;
         justify-content: space-evenly;
@@ -195,11 +196,11 @@ body {
         font-weight: bold;
 }
 
-.s-heading p{
+.e-heading p {
         margin: 0%;
 }
 
-.student-txt{
+.event-txt {
         display: flex;
         align-items: baseline;
         justify-content: center;
@@ -207,108 +208,106 @@ body {
         font-size: 14px;
 }
 
-.search-std input{
-        margin: 20px;
-        border: none;
-        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 8px;
-        padding: 10px 20px;
-        background-color: aliceblue;
-}
-
-.search-std button{
-        border: none;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 8px;
-        background-color: #003580;
-}
-
-/* Table */
-
-.std-table{
-        overflow-x: scroll;
-}
-
-table{
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 20px 0px;
-}
-
-td, th{
-        padding: 10px 40px 0px 10px;
-}
-
-.std-detail{
+/* Event Tag */
+.e-inner {
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
 }
 
-.std-detail i{
-        font-size: 25px;
-        margin: 0px 20px;
+.event-card-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 15px;
+        margin: 0px 30px;
+        max-width: 600px;
+        width: 100%;
 }
 
-.std-info span{
-        font-size: 12px;
+.event-date{
+        overflow: hidden;
+}
+
+.e-date {
+        background-color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 15px 0px 0px 15px;
+        color: #003580;
+        padding: 80px 40px;
+        min-width: 120px;
+}
+
+.event-date p {
         margin: 0px;
 }
 
-.std-info p{
+.e-tag p {
+        color: #003580;
+        font-size: 13px;
+        margin: 0px 10px;
+        font-weight: 500;
+}
+
+.e-head {
         font-weight: bold;
-        margin: 0px;
+        font-size: 22px;
+        margin: 0px 10px;
 }
 
-.status-v span{
-        color: green;
-        background-color: rgba(0, 128, 0, 0.168);
-        padding: 5px;
-        border-radius: 8px;
+.e-txt p {
+        margin: 0px 10px;
+        font-size: 15px;
 }
 
-.status-p span{
-        color: orange;
-        background-color: rgba(255, 255, 0, 0.182);
-        padding: 5px;
-        border-radius: 8px;
+.e-time {
+        margin: 10px;
 }
 
-.status-r span{
-        color: red;
-        background-color: rgba(255, 0, 0, 0.187);
-        padding: 5px;
-        border-radius: 8px;
+.e-time p {
+        font-size: 13px;
+        margin: 0%;
 }
 
-td button{
-        background: none;
-        border: none;
-        color: red;
+@media (max-width:950px) {
+        .e-inner{
+                flex-direction: column;
+        }
+        .event-card-body{
+                margin-top: 30px;
+        }
+
+        .event-date{
+                overflow: hidden;
+        }
+
+        .e-date{
+                padding: 70px 80px;
+        }
 }
 
-@media (max-width: 568px){
-
-        .student-head{
+@media (max-width:550px){
+        .event-head{
                 flex-direction: column;
         }
 
-        .search-std{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+        .event-card-body{
                 flex-direction: column;
         }
-}
-
-
-@media (max-width: 400px){
-        .s-heading{
-                font-size: 22px;
+        .e-date{
+                padding: 0px 550px;
+                overflow: hidden;
+        }
+        .event-card-body{
+                border-radius: 15px 15px 0px 0px;
+                overflow: hidden;
         }
 }
-
 
 /* Edit */
 
@@ -336,11 +335,30 @@ td button{
         font-size: 15px;
 }
 
-.f-row {
+.save-edit-btn {
+        display: flex;
+        align-items: end;
+        justify-content: flex-end;
+}
+
+.save-edit-btn button {
+        border: none;
+        border-radius: 8px;
+        padding: 8px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        margin: 0px 5px;
+}
+
+.edit-head-txt{
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        margin: 10px 0px;
+        justify-content: space-between;
+}
+
+.e-cancel button{
+        background: none;
+        border: none;
 }
 
 .input-row {
@@ -387,44 +405,10 @@ td button{
         box-shadow: 0 0 5px rgba(0, 53, 128, 0.5);
 }
 
-.save-edit-btn {
-        display: flex;
-        align-items: end;
-        justify-content: flex-end;
-}
-
-.save-edit-btn button {
-        border: none;
-        border-radius: 8px;
-        padding: 8px 20px;
-        font-size: 14px;
-        cursor: pointer;
-        margin: 0px 5px;
-}
-
-.edit-head-txt{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-}
-
-.e-cancel button{
-        background: none;
-        border: none;
-}
-
 @media (max-width: 768px){
-
         .edit-outer{
                 width: 80%;
                 margin: 200px 0px;
         }
-
-        .e-out{
-                overflow-y: scroll;
-        }
-
-        .f-row{
-                flex-direction: column;
-        }
+        
 }

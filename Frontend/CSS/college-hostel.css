@@ -1,5 +1,5 @@
 body {
-  background-color: aliceblue;
+        background-color: aliceblue;
 }
 
 .outer-dash {
@@ -42,7 +42,7 @@ body {
         margin: 10px;
 }
 
-.college-nav-img img{
+.college-nav-img img {
         height: 50px;
 }
 
@@ -101,7 +101,7 @@ body {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.toggle-img img{
+.toggle-img img {
         height: 40px;
 }
 
@@ -122,14 +122,14 @@ body {
 }
 
 @media (max-width: 768px) {
-       
+
         .dash-info-link li {
                 font-size: 15px;
                 padding: 6px;
                 margin: 5px;
         }
 
-        .toggle-info-link li{
+        .toggle-info-link li {
                 font-size: 15px;
                 margin: 5px;
         }
@@ -141,7 +141,7 @@ body {
 }
 
 /* Upper Nav */
-.upper-nav{
+.upper-nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -152,166 +152,184 @@ body {
         background-color: white;
 }
 
-.upper-nav-info{
+.upper-nav-info {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
 }
 
-.upper-nav-img{
+.upper-nav-img {
         font-size: 40px;
         margin: 0px 40px 0px 20px;
 }
 
-.upper-nav-txt p{
+.upper-nav-txt p {
         margin: 0px;
 }
-/* Student Dashboard */
 
-.student-outer-body{
-        padding: 20px;
+/* Hostel */
+
+.hostel-management-outer {
         width: 100%;
+        padding: 20px;
 }
 
-.student-head{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0px 15px;
-}
-
-.student-edit-btn button{
-        background-color: #003580;
-        color: white;
-        border-radius: 20px;
-        padding: 5px 10px;
-}
-
-.s-heading{
-        display: flex;
-        align-items: baseline;
-        justify-content: space-evenly;
+.h-head {
         font-size: 30px;
         font-weight: bold;
 }
 
-.s-heading p{
-        margin: 0%;
-}
-
-.student-txt{
+.h-nav {
         display: flex;
-        align-items: baseline;
+        align-items: center;
         justify-content: center;
-        flex-direction: column;
-        font-size: 14px;
+        overflow: hidden;
+        text-align: center;
+}
+.hostel-link{
+        margin: 10px 20px;
 }
 
-.search-std input{
-        margin: 20px;
-        border: none;
-        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 8px;
-        padding: 10px 20px;
-        background-color: aliceblue;
+.hostel-link button{
+       margin: 0px 10px;
+       border-radius: 15px;
+       border: none;
+       padding: 5px 20px;
+
 }
 
-.search-std button{
-        border: none;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 8px;
+.hostel-link p{
+        margin: 0px;
+}
+
+/* Staff details */
+.staff-head{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.staff-head p{
+        font-size: 20px;
+        font-weight: bold;
+}
+
+.staff-head button{
         background-color: #003580;
+        border: none;
+        padding: 5px 20px;
+        color: white;
+        font-weight: 400;
+        border-radius: 15px;
 }
 
-/* Table */
-
-.std-table{
-        overflow-x: scroll;
+/* Card */
+.staff-card-outer{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
 }
 
-table{
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 20px 0px;
-}
-
-td, th{
-        padding: 10px 40px 0px 10px;
-}
-
-.std-detail{
+.staff-card{
         display: flex;
         align-items: center;
         justify-content: start;
+        padding: 10px 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+        border-radius: 15px;
+        margin: 20px 10px;
 }
 
-.std-detail i{
-        font-size: 25px;
-        margin: 0px 20px;
+.staff-img i{
+        font-size: 45px;
+        padding: 0px 10px 0px 5px;
 }
 
-.std-info span{
-        font-size: 12px;
+.staff-info{
+        margin-right: 40px;
+}
+
+.s-name{
+        font-size: 15px;
         margin: 0px;
-}
-
-.std-info p{
         font-weight: bold;
-        margin: 0px;
 }
 
-.status-v span{
-        color: green;
-        background-color: rgba(0, 128, 0, 0.168);
-        padding: 5px;
+.s-tag span{
+        color: #003580;
+        border: 1px solid #003580;
         border-radius: 8px;
+        text-align: center;
+        margin: 0px; 
+        padding: 2px 5px;
+        font-size: 12px;
 }
 
-.status-p span{
-        color: orange;
-        background-color: rgba(255, 255, 0, 0.182);
-        padding: 5px;
-        border-radius: 8px;
+.s-num{
+        font-size: 12px;
 }
 
-.status-r span{
-        color: red;
-        background-color: rgba(255, 0, 0, 0.187);
-        padding: 5px;
-        border-radius: 8px;
-}
-
-td button{
+.staff-del button{
         background: none;
         border: none;
         color: red;
 }
 
-@media (max-width: 568px){
-
-        .student-head{
-                flex-direction: column;
-        }
-
-        .search-std{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+@media (max-width:950px){
+        .staff-card-outer{
                 flex-direction: column;
         }
 }
 
+@media (max-width:550px){
+        .staff-head{
+                flex-direction: column;
+        }
 
-@media (max-width: 400px){
-        .s-heading{
-                font-size: 22px;
+        .h-nav{
+                flex-direction: column;
+        }
+        .h-head{
+                font-size: 20px
+        }
+}
+
+/* Hostel Details */
+.hostel-details-out{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+}
+
+.hostel-details-card{
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+        padding: 10px 20px;
+        border-radius: 15px;
+}
+
+.hostel-details-card span{
+        font-size: 12px;
+}
+
+.hostel-details-card p{
+        font-weight: bold;
+}  
+
+.h-details-head{
+        margin: 20px 0px 10px 0px;
+        font-size: 25px;
+        font-weight: bold;
+}
+
+@media (max-width:550px){
+        .hostel-details-out{
+                grid-template-columns: 1fr;
         }
 }
 
 
 /* Edit */
-
 .edit-outer {
         background-color: white;
         padding: 30px;
@@ -326,21 +344,39 @@ td button{
         display: none;
 }
 
-.edit-head {
-        font-size: 25px;
-        font-weight: bold;
-        margin: 0px;
+.save-edit-btn {
+        display: flex;
+        align-items: end;
+        justify-content: flex-end;
+}
+
+.save-edit-btn button {
+        border: none;
+        border-radius: 8px;
+        padding: 8px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        margin: 0px 5px;
+}
+
+.edit-head-txt{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.e-cancel button{
+        background: none;
+        border: none;
 }
 
 .edit-txt {
         font-size: 15px;
 }
-
-.f-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin: 10px 0px;
+.edit-head {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0px;
 }
 
 .input-row {
@@ -387,44 +423,60 @@ td button{
         box-shadow: 0 0 5px rgba(0, 53, 128, 0.5);
 }
 
-.save-edit-btn {
-        display: flex;
-        align-items: end;
-        justify-content: flex-end;
-}
-
-.save-edit-btn button {
-        border: none;
-        border-radius: 8px;
-        padding: 8px 20px;
-        font-size: 14px;
-        cursor: pointer;
-        margin: 0px 5px;
-}
-
-.edit-head-txt{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-}
-
-.e-cancel button{
-        background: none;
-        border: none;
-}
-
 @media (max-width: 768px){
-
         .edit-outer{
                 width: 80%;
                 margin: 200px 0px;
         }
+        
+}
 
-        .e-out{
-                overflow-y: scroll;
-        }
+/* Student table */
 
-        .f-row{
-                flex-direction: column;
-        }
+.std-table{
+        overflow-x: scroll;
+        width: 100%;
+        padding: 10px 20px;
+}
+
+.hostel-s-outer table{
+        width: 100%;
+        border-collapse: separate;
+        box-shadow: 0 0 5px rgba(0, 53, 128, 0.5);
+        border-radius: 12px;
+}
+
+th, td{
+        padding: 5px 20px;
+}
+
+.std-head{
+        font-size: 25px;
+        font-weight: bold;
+        text-align: start;
+}
+
+/* Complaints table */
+.std-cpl{
+        overflow-x: scroll;
+        width: 100%;
+        padding: 10px 20px;
+}
+
+.cpl-table table{
+        width: 100%;
+        border-collapse: separate;
+        box-shadow: 0 0 5px rgba(0, 53, 128, 0.5);
+        border-radius: 12px;
+}
+
+.cpl-head{
+        font-size: 25px;
+        font-weight: bold;
+        text-align: start;
+}
+
+td button{
+        background: none;
+        border-radius: 12px;
 }
