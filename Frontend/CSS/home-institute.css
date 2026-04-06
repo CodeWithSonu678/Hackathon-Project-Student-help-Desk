@@ -128,18 +128,23 @@ li a button {
         width: 100%;
 }
 
+.search-box h3{
+        text-align: center;
+}
+
 .search-inp input{
         width: 100%;
-        padding: 5px 20px;
+        padding: 8px 20px;
         margin: 5px;
         border-radius: 12px;
+        border: 1px solid gainsboro;
 }
 
 .filter-inp{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin-bottom: 20px;
+        margin: 20px;
 }
 
 .filter-cat {
@@ -147,6 +152,7 @@ li a button {
         align-items: center;
         justify-content: space-evenly;
         width: 100%;
+        margin: 15px;
 }
 
 .filter-cat select,option{
