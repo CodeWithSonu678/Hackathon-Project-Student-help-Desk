@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e9e4eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 700px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+
+.sections {
+    display: flex;
+    background: #eee;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.sections a {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.sections .active {
+    background: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+
+.input-box {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #f1f1f1;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row .input-box {
+    flex: 1;
+}
+
+
+.captcha-box {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+
+.captcha-box span {
+    background: #eee;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #02052b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.login {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login a {
+    color: #02052b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width:600px){
+    .sections{
+        flex-direction: column; 
+    }
+
+   .row{
+    flex-direction: column;
+   }
+
+   .captcha-box{
+    flex-direction: column;
+   }
+}

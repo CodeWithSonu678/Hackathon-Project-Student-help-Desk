@@ -1,0 +1,237 @@
+body {
+  background-color: aliceblue;
+}
+
+.outer-dash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 80px;
+  background-color: white;
+  margin-top: 70px;
+}
+
+
+/* Nav Bar */
+.outer-dash-nav {
+  display: none;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  padding: 5px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+
+.college-info-nav {
+  padding: 5px 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+.college-nav-info p {
+  margin: 10px;
+}
+
+.college-nav-img img {
+  height: 50px;
+}
+
+#hide-nav {
+  background: none;
+  border: none;
+}
+
+.dash-info-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.dash-info-link {
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.dash-info-link li {
+  font-size: 13px;
+  list-style: none;
+  padding: 10px;
+  margin: 2px;
+}
+
+.dash-info-link ul {
+  padding: 0px;
+}
+
+.dash-info-link li:hover {
+  transition: 0.2s ease-in-out;
+  background-color: aliceblue;
+  border-bottom: 1px solid #003580;
+}
+
+.college-log-out button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0px 5px 20px 5px;
+}
+
+
+.toggle-dash-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.toggle-img img {
+  height: 40px;
+}
+
+.toggle-info-link ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.toggle-info-link li {
+  font-size: 15px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.toggle-logout {
+  font-size: 15px;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .dash-info-link li {
+    font-size: 15px;
+    padding: 6px;
+    margin: 5px;
+  }
+
+  .toggle-info-link li {
+    font-size: 15px;
+    margin: 5px;
+  }
+
+  .toggle-logout {
+    font-size: 15px;
+    margin: 0px;
+  }
+}
+
+/* Upper Nav */
+.upper-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  width: 93%;
+  z-index: 990;
+  background-color: white;
+}
+
+.upper-nav-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.upper-nav-img {
+  font-size: 40px;
+  margin: 0px 40px 0px 20px;
+}
+
+.upper-nav-txt p {
+  margin: 0px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 15px 20px;
+    width: 70%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Row (2 column) */
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.field {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.field label {
+    font-size: 13px;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 70px;
+}
+
+/* Button */
+.s-btn button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(to right, #2a4dff, #1e2bbf);
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width:650px){
+  .card{
+    width: 98%;
+  }
+}
