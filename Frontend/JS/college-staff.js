@@ -33,3 +33,19 @@ if (window.innerWidth > 768) {
     });
   }
 }
+
+const editButton = document.getElementById('edit-btn');
+const showEdit = document.getElementById('e-outer');
+const hideEdit = document.getElementById('edit-cancel');
+
+if (editButton && showEdit){
+  editButton.addEventListener('click', () => {
+    showEdit.style.display = 'block';
+  });
+}
+
+if (hideEdit && showEdit){
+  hideEdit.addEventListener('click', () => {
+    showEdit.style.display = 'none';
+  });
+}

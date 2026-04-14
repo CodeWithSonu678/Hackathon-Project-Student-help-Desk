@@ -170,7 +170,10 @@ body {
 
 .student-outer-body{
         padding: 20px;
-        width: 100%;
+        width: 98%;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .student-head{
@@ -213,7 +216,6 @@ body {
         box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 8px;
         padding: 10px 20px;
-        background-color: aliceblue;
 }
 
 .search-std button{

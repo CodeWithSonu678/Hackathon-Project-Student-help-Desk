@@ -225,6 +225,7 @@ body {
         margin: 0px 30px;
         max-width: 600px;
         width: 100%;
+        gap: 20px;
 }
 
 .event-date{
@@ -239,7 +240,7 @@ body {
         flex-direction: column;
         border-radius: 15px 0px 0px 15px;
         color: #003580;
-        padding: 80px 40px;
+        padding: 80px 70px;
         min-width: 120px;
 }
 
