@@ -1,128 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Register</title>
   <link rel="stylesheet" href="../CSS/register-form.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
 
 <body>
 
-<div class="container">
-  <h2>Create New Account</h2>
-  <p class="subtitle">Register as a college or student</p>
+  <div class="container">
+    <h2>Create New Account</h2>
+    <p class="subtitle">Register as a college or student</p>
 
 
-  <div class="sections">
-    <a href="college-register.html">College</a>
-    <a href="student-register.html" class="active">Student</a>
-  </div>
-
-  <form>
-
-    <div class="row">
-      <div class="input-box">
-        <label>Full Name</label>
-        <input type="text">
-      </div>
-
-      <div class="input-box">
-        <label>Date of Birth</label>
-        <input type="text" placeholder="dd-mm-yyyy">
-      </div>
+    <div class="sections">
+      <a href="college-register.html">College</a>
+      <a href="student-register.html" class="active">Student</a>
     </div>
 
-    <div class="row">
-      <div class="input-box">
-        <label>Branch</label>
-        <select>
-          <option>Select branch</option>
-          <option>Civil Engineering</option>
-          <option>Mechanical Engineering</option>
-          <option>Computer Science Engineering</option>
-          <option>Information Technology</option>
-          <option>Electronics & Communication Engineering</option>
-          <option>Pharmacy</option>
-        </select>
-      </div>
+    <form>
 
-      <div class="input-box">
-        <label>Semester/Class/Year</label>
-        <select>
-          <option>Select</option>
-          <option>1st</option>
-          <option>2nd</option>
-          <option>3rd</option>
-        </select>
-      </div>
-    </div>
+      <div class="row">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter Your Name">
+        </div>
 
-    <div class="input-box">
-      <label>Enrollment No / Roll No</label>
-      <input type="text">
-    </div>
-
-    <div class="row">
-      <div class="input-box">
-        <label>College Name</label>
-        <input type="text">
-      </div>
-
-      <div class="input-box">
-        <label>College Code</label>
-        <input type="text">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="input-box">
-        <label>Mobile Number</label>
-        <input type="text">
-      </div>
-
-      <div class="input-box">
-        <label>Email (Optional)</label>
-        <input type="email">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="input-box">
-        <label>Create Password</label>
-        <input type="password">
-      </div>
-
-      <div class="input-box">
-        <label>Confirm Password</label>
-        <input type="password">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="input-box">
-        <label>OTP</label>
-        <input type="text">
-      </div>
-
-      <div class="input-box">
-        <label>Captcha Code</label>
-        <div class="captcha-box">
-          <span>3P5N8T</span>
-          <label for=""></label>
-          <input type="text" placeholder="Enter Captcha Code">
+        <div class="input-box">
+          <label>Date of Birth</label>
+          <input type="text" placeholder="dd-mm-yyyy">
         </div>
       </div>
-    </div>
 
-    <button class="btn">Register Student</button>
+      <div class="row">
+        <div class="input-box">
+          <label for="">Program</label>
+          <select name="" id="">
+            <option value="">Select Program</option>
+            <option value="">Postgraduate</option>
+            <option value="">Undergraduate</option>
+          </select>
+        </div>
+        
+        <div class="input-box">
+        <label for="">Course</label>
+        <select name="" id="">
+          <option value="">Select Course</option>
+          <option value="">B-Tech</option>
+          <option value="">M-Tech</option>
+          <option value="">Diploma</option>
+        </select>
+      </div>
 
-  </form>
 
-  <p class="login">Already have an account? <a href="#">Login here</a></p>
-</div>
+      <div class="row">
+        <div class="input-box">
+          <label>Branch</label>
+          <select>
+            <option>Select branch</option>
+            <option>Civil Engineering</option>
+            <option>Mechanical Engineering</option>
+            <option>Computer Science Engineering</option>
+            <option>Information Technology</option>
+            <option>Electronics & Communication Engineering</option>
+            <option>Pharmacy</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <label>Semester/Class/Year</label>
+          <select>
+            <option>Select</option>
+            <option>1st</option>
+            <option>2nd</option>
+            <option>3rd</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <label>Enrollment No / Roll No</label>
+        <input type="text" placeholder="Enter Enrollment No">
+      </div>
+
+      <div class="row">
+        <div class="input-box">
+          <label>College Name</label>
+          <input type="text" placeholder="Enter College Name">
+        </div>
+
+        <div class="input-box">
+          <label>College Code</label>
+          <input type="text" placeholder="Enter College Code">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-box">
+          <label>Mobile Number</label>
+          <input type="text" placeholder="Enter Mobile Number">
+        </div>
+
+        <div class="input-box">
+          <label>Email </label>
+          <input type="email" placeholder="Enter Email">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-box">
+          <label>Create Password</label>
+          <input type="password" placeholder="Create Password">
+        </div>
+
+        <div class="input-box">
+          <label>Confirm Password</label>
+          <input type="password" placeholder="Confirm Password">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-box">
+          <label>OTP</label>
+          <input type="text" placeholder="Enter OTP">
+        </div>
+
+        <div class="input-box">
+          <label>Captcha Code</label>
+          <div class="captcha-box">
+            <span>3P5N8T</span>
+            <label for=""></label>
+            <input type="text" placeholder="Enter Captcha Code">
+          </div>
+        </div>
+      </div>
+
+      <button class="reg-btn">Register Student</button>
+
+    </form>
+
+    <p class="login">Already have an account? <a href="student-login.html">Login here</a></p>
+  </div>
 
 </body>
+
 </html>

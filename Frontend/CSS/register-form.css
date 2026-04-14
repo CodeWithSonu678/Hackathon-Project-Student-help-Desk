@@ -78,7 +78,10 @@ h2 {
 
 .row {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 10px;
+    width: 100%;
 }
 
 .row .input-box {
@@ -101,10 +104,10 @@ h2 {
 }
 
 
-.btn {
+.reg-btn {
     width: 100%;
     padding: 12px;
-    background: #02052b;
+    background-color: #001e39;
     color: white;
     border: none;
     border-radius: 6px;
