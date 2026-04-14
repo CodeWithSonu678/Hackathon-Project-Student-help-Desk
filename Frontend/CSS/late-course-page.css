@@ -1,0 +1,108 @@
+body{
+        margin: 0%;
+        padding: 0%;
+        background-color: aliceblue;
+}
+
+/* Header */
+
+.header a{
+        text-decoration: none;
+        font-size: 18px;
+        color: rgb(68, 0, 128);
+}
+
+.header{
+        padding: 20px;
+        margin: 15px 0px;
+}
+
+/* Header Card */
+
+.header-card-outer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.header-card-body{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        padding: 20px;
+        gap: 20px;
+        background-color: white;
+        width: 98%;
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 12px;
+}
+
+.header-icon{
+        margin-top: 10px;
+}
+
+.header-icon i{
+        font-size: 33px;
+        background-color: #1d43ce37;
+        color: #1d43ce;
+        padding: 5px 10px;
+        border-radius: 12px;
+}
+
+.heading p{
+        font-size: 23px;
+        margin: 0px 0px 10px 0px;
+}
+
+.header-txt p{
+        font-weight: 400;
+        margin: 0px;
+}
+
+/* Course College */
+
+.c-head{
+        font-size: 27px;
+        padding: 20px;
+        margin: 20px 0px;
+}
+
+.college-card-outer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        padding: 0px 20px;
+}
+
+.college-card-body{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        background-color: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.college-card-head p{
+        font-size: 20px;
+}
+
+.card-badge i{
+        background-color: rgba(255, 255, 0, 0.4);
+        padding: 5px 10px;
+        border-radius: 12px;
+        color: rgb(102, 26, 26);
+}
+
+@media (max-width:950px) {
+        .college-card-outer{
+                grid-template-columns: repeat(2,1fr);
+        }
+}
+
+@media (max-width:550px) {
+        .college-card-outer{
+                grid-template-columns: repeat(1,1fr);
+        }
+}

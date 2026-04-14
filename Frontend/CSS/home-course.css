@@ -112,124 +112,90 @@ li a button {
         }
 }
 
-
-/* Search College */
-.search-box-body{
+/* head */
+.mortarboard {
+        font-size: 70px;
         display: flex;
-        align-self: center;
-        justify-self: center;
-        flex-direction: column;
-        width: 95%;
-        padding: 10px 20px;
-        margin-bottom: 20px;
-        border-radius: 12px;
+        align-items: center;
+        justify-content: center;
         margin-top: 15vh;
-        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: rgb(68, 0, 128);
 }
 
-.search-box{
-        width: 100%;
-}
-
-.search-box h3{
-        text-align: center;
-}
-
-.search-inp input{
-        width: 100%;
-        padding: 8px 20px;
-        margin: 5px;
-        border-radius: 12px;
-        border: 1px solid gainsboro;
-}
-
-.filter-inp{
+.head-outer{
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        margin: 20px;
+        justify-content: center;
+        flex-direction: column;
 }
 
-.filter-cat {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-        margin: 15px;
-}
-
-.filter-cat select,option{
-        padding: 5px 10px;
-        border-radius: 8px;
-        width: 28%;
-}
-
-.inp-btn button{
-        background-color: #003580;
-        border: none;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 12px;
-}
-
-@media (max-width:500px){
-        .filter-cat{
-                flex-direction: column;
-        }
-        .filter-cat select,option{
-                width: 75%;
-                margin: 5px 0px;
-        }
-}
-
-/* college-card */
-
-.college-card-outer{
-        padding: 0px 20px;
-}
-
-.college-card{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: 20px 0px;
-        width: 100%;
-        border-radius: 12px;
-        padding: 15px 0px;
-}
-
-.college-name p{
-        font-size: 23px;
+.head-outer p{
+        font-size: 30px;
         font-weight: bold;
-        color: #003580;
-        margin: 0px;
 }
 
-.college-field p{
-        font-size: 14px;
-        margin: 0px;
+/* card */
+.outer-course-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
-.board-info p{
-        font-size: 14px;
-        margin: 0px;
-}
-
-.view-btn button{
-        background-color: #003580;
-        color: white;
+.course-card-body{
+        margin: 50px 20px;
+        width: 400px;
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 20px;
         border-radius: 15px;
-        padding: 5px 10px;
 }
 
-@media (max-width:500px){
-        .college-card{
+.card-head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.card-head .card-logo{
+        font-size: 30px;
+        padding: 8px 13px;
+        margin: 15px;
+        border-radius: 12px;
+        color: white;
+}
+
+.card-head .view-button button{
+        background: none;
+        border: none;
+}
+
+.card-txt p{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0px ;
+}
+
+.card-txt span{
+        font-size: 14px;
+}
+
+.card-link a{
+        color: rgb(68, 0, 128);
+        text-decoration: none;
+}
+
+.card-link a:hover{
+        color: #003580;
+        text-decoration: underline;
+}
+
+@media (max-width:650px) {
+        .outer-course-card{
                 flex-direction: column;
-                align-items: start;
-                justify-content: center;
-                padding: 20px 40px;
-                gap: 20px;
+        }
+
+        .course-card-body{
+                width: 270px;
+                margin: 10px 0px;
         }
 }
 

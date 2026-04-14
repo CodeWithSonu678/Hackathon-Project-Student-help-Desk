@@ -9,12 +9,13 @@ body {
 .outer-navbody {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: white;
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 1000;
+        padding: 10px 30px;
 }
 
 .nav-logo-img img {
@@ -62,69 +63,51 @@ li a button {
         padding: 8px 15px;
 }
 
-.nav-link-toggle {
+.nav-link-outer{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+}
+
+.nav-link-toggle{
         display: none;
 }
 
-.nav-link-toggle button {
-        padding: 3px 12px;
-        font-size: 30px;
-        background-color: #0A4174;
-        border: 1px solid black;
-        color: white;
+.nav-link-toggle button{
+        background: none;
         border-radius: 8px;
-}
-
-.nav-toggle-links {
-        display: none;
+        padding: 5px 10px;
+        font-size: 20px;
 }
 
 @media (max-width:768px) {
-        .nav-links-url ul {
-                display: none;
-        }
-
-        .reg-lo-link ul {
-                display: none;
-        }
-
-        .nav-link-toggle {
-                display: flex;
+        .nav-link-outer{
                 flex-direction: column;
-                align-items: flex-start;
-        }
-
-        .nav-toggle-links {
                 display: none;
         }
 
-        .nav-toggle-links.active {
-                display: flex;
-                align-items: start;
-                justify-content: space-evenly;
-                flex-direction: column;
-                position: fixed;
+        .nav-link-outer.active{
+                display: block;
+                position: absolute;
+                z-index: 999;
                 right: 0px;
+                top: 70px;
                 background-color: white;
-                z-index: 1000;
+                border-radius: 12px;
         }
 
-        .t-link a:hover {
-                color: #0A4174;
-                border-bottom: 3px solid #0A4174;
-                transition: 0.3s ease-in-out;
+        .nav-links-url ul{
+                flex-direction: column;
+                gap: 10px;
         }
 
-        .toggle-li li a {
-                text-decoration: none;
-                color: black;
-                font-size: 16px;
-                font-weight: bold;
+        .reg-lo-link ul{
+                gap: 10px;
+                flex-direction: column;
         }
 
-        .toggle-li li {
-                list-style: none;
-                margin: 20px 15px;
+        .nav-link-toggle{
+                display: block;
         }
 }
 
