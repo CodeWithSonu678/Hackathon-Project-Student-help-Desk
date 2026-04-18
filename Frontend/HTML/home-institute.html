@@ -8,38 +8,15 @@
         <link rel="stylesheet" href="../CSS/home-institute.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+        <style>
+                #inst-link{
+                        color: #003580; border-bottom: 3px solid #003580;
+                }
+        </style>
 </head>
 
 <body>
-        <div class="outer-navbody">
-                <div class="nav-logo-img">
-                        <img src="../img/foot-logo.png" alt="">
-                </div>
-                <div class="nav-link-outer">
-                        <div class="nav-links-url">
-                                <ul class="link-li">
-                                        <li><a href="index.html">Home</a>
-                                        </li>
-                                        <li><a href="home-institute.html" style="color: #003580; border-bottom: 3px solid #003580;">Institute</a></li>
-                                        <li><a href="home-course.html">Courses</a></li>
-                                        <li><a href="">Notices</a></li>
-                                        <li><a href="">About</a></li>
-                                </ul>
-                        </div>
-                        <div class="reg-lo-link">
-                                <ul class="link-li">
-                                        <li><a href="login-form.html"><button>Login</button></a></li>
-                                        <li><a href="student-register.html"><button
-                                                                style="background-color: #0A4174; color: white;">Register</button></a>
-                                        </li>
-                                </ul>
-                        </div>
-                </div>
-                <div class="nav-link-toggle">
-                        <button id="navToggleBtn" aria-label="Toggle navigation">☰</button>
-
-                </div>
-
+        <div id="header">
 
         </div>
 
@@ -175,75 +152,23 @@
 
         <!-- Footer -->
 
-        <div class="outer-footer">
-                <div class="f-body">
-                        <div class="web-info-foot">
-                                <div class="foot-logo">
-                                        <img src="../img/foot-logo.png" alt="">
-                                </div>
-                                <div class="foot-info">
-                                        <p>A comprehensive platform educational institutes,students and administration
-                                                seamlessly</p>
-                                </div>
-                        </div>
-                        <div class="web-info-foot">
-                                <div class="foot-head">
-                                        QUICK LINKS
-                                </div>
-                                <div class="foot-links">
-                                        <ul>
-                                                <li><a href="">Institutes Directory</a></li>
-                                                <li><a href="">Available Courses</a></li>
-                                                <li><a href="">Public Notices</a></li>
-                                                <li><a href="">Institute Register</a></li>
-                                        </ul>
-                                </div>
-                        </div>
-                </div>
-                <div class="f-body">
-                        <div class="web-info-foot">
-                                <div class="foot-head">
-                                        LEGAL
-                                </div>
-                                <div class="foot-links">
-                                        <ul>
-                                                <li><a href="">Privacy Policy</a></li>
-                                                <li><a href="">Terms of Service</a></li>
-                                                <li><a href="">Grievance Redressal</a></li>
-                                        </ul>
-                                </div>
-                        </div>
-                        <div class="web-info-foot">
-                                <div class="foot-head">
-                                        CONTACT SUPPORT
-                                </div>
-                                <div class="foot-links">
-                                        <ul>
-                                                <li><a href=""><i class="bi bi-geo-alt"></i></a></li>
-                                                <li><a href=""><i class="bi bi-telephone"></i></a></li>
-                                                <li><a href=""><i class="bi bi-envelope"></i></a></li>
-                                        </ul>
-                                </div>
-                        </div>
-                </div>
-        </div>
-
-        <!-- Copyright -->
-
-        <div class="c-txt">
-                <div class="c-policy">
-                        <p><i class="bi bi-c-circle"></i> | All Rights are Reserved</p>
-                </div>
-                <div class="social-links">
-                        <ul>
-                                <li><a href="">Twitter|</a></li>
-                                <li><a href="">LinkedIn|</a></li>
-                                <li><a href="">Facebook|</a></li>
-                        </ul>
-                </div>
-        </div>
+        <div id="footer"></div>
 
 </body>
 <script src="../JS/home-institute.js"></script>
+
+<script>
+        function loadHTML(id, file) {
+                fetch(file)
+                        .then(response => response.text())
+                        .then(data => {
+                                document.getElementById(id).innerHTML = data;
+                        });
+        }
+
+        // Load header and footer
+        loadHTML("header", "home-nav.html");
+        loadHTML("footer", "home-footer.html");
+</script>
 
 </html>
